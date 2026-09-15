@@ -10,6 +10,18 @@ import { fileURLToPath } from "node:url";
 import { bewerteAntwort, erklaereFrage, listeModelle, fehlertext, EMPFOHLENE_MODELLE, STANDARD_MODELL } from "./lib/claude.js";
 import { holeSchluessel, setzeSchluessel, schluesselUebersicht, ANBIETER, ENV_PFAD } from "./lib/env.js";
 import * as store from "./lib/store.js";
+import {
+  COOKIE_NAME,
+  stelleZugangsdatenSicher,
+  versuchLogin,
+  pruefeSitzung,
+  beendeSitzung,
+  leseCookie,
+  setzeSitzungsCookie,
+  loescheSitzungsCookie,
+} from "./lib/auth.js";
+
+stelleZugangsdatenSicher();
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT) || 3000;
@@ -77,6 +89,25 @@ function modellWahl(gewuenscht) {
 // ------------------------------------------------------------------ Routen
 
 const routen = {
+  "GET /api/session": (req, res) => sendJson(res, 200, { ok: true }),
+
+  "POST /api/login": (req, res, body) => {
+    try {
+      const token = versuchLogin(req, body.username, body.password);
+      if (!token) return sendJson(res, 401, { fehler: "Benutzername oder Passwort ist falsch." });
+      setzeSitzungsCookie(res, token, { sicher: istHttps(req) });
+      sendJson(res, 200, { ok: true });
+    } catch (err) {
+      sendJson(res, err.code === "gesperrt" ? 429 : 500, { fehler: err.message });
+    }
+  },
+
+  "POST /api/logout": (req, res) => {
+    beendeSitzung(leseCookie(req, COOKIE_NAME));
+    loescheSitzungsCookie(res, { sicher: istHttps(req) });
+    sendJson(res, 200, { ok: true });
+  },
+
   "GET /api/questions": (req, res) => sendJson(res, 200, katalog),
 
   "GET /api/wissen": (req, res) => sendJson(res, 200, wissen),
@@ -242,11 +273,25 @@ const routen = {
 
 // ------------------------------------------------------------------ Server
 
+// Ohne gueltige Sitzung erreichbar: die Login-Seite selbst und die Login-API.
+const OEFFENTLICHE_PFADE = new Set(["/login.html", "/login.js", "/styles.css", "/api/login", "/api/session"]);
+
+function istHttps(req) {
+  return req.socket?.encrypted === true || req.headers["x-forwarded-proto"] === "https";
+}
+
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
   const schluessel = `${req.method} ${url.pathname}`;
 
   try {
+    const angemeldet = Boolean(pruefeSitzung(leseCookie(req, COOKIE_NAME)));
+    if (!angemeldet && !OEFFENTLICHE_PFADE.has(url.pathname)) {
+      if (url.pathname.startsWith("/api/")) return sendJson(res, 401, { fehler: "Bitte zuerst anmelden.", code: "nicht_angemeldet" });
+      res.writeHead(302, { Location: `/login.html?weiter=${encodeURIComponent(url.pathname)}` });
+      return res.end();
+    }
+
     const route = routen[schluessel];
     if (route) {
       const body = req.method === "POST" || req.method === "PUT" ? await leseBody(req) : {};

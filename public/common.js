@@ -25,6 +25,10 @@ export async function api(pfad, { methode = "GET", daten } = {}) {
   } catch {
     /* leere Antwort */
   }
+  if (res.status === 401 && inhalt.code === "nicht_angemeldet") {
+    location.replace(`/login.html?weiter=${encodeURIComponent(location.pathname)}`);
+    return new Promise(() => {}); // Navigation laeuft, keine weitere Verarbeitung noetig
+  }
   if (!res.ok) {
     const fehler = new Error(inhalt.fehler || `Fehler ${res.status}`);
     fehler.code = inhalt.code;
@@ -56,8 +60,16 @@ export function renderNav(aktiv, { titel, untertitel } = {}) {
     </nav>
     <div class="topright">
       <span class="lernuhr" id="lernuhr" title="Aktive Lernzeit heute">⏱ <strong id="lernuhrWert">0 min</strong></span>
+      <button class="navlink" id="btnAbmelden" type="button" title="Abmelden">⎋ Abmelden</button>
     </div>`;
   document.body.prepend(kopf);
+  kopf.querySelector("#btnAbmelden").addEventListener("click", async () => {
+    try {
+      await fetch("/api/logout", { method: "POST" });
+    } finally {
+      location.href = "/login.html";
+    }
+  });
 }
 
 // ------------------------------------------------------------- Lernzeit

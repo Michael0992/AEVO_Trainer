@@ -52,6 +52,14 @@ async function init() {
   if (anthropic?.gesetzt) $("mcProfil").textContent = `Schlüssel aktiv · ${anthropic.maskiert} →`;
 }
 
+$("btnAbmelden")?.addEventListener("click", async () => {
+  try {
+    await fetch("/api/logout", { method: "POST" });
+  } finally {
+    location.href = "/login.html";
+  }
+});
+
 function gruss() {
   const h = new Date().getHours();
   if (h < 11) return "Guten Morgen";
