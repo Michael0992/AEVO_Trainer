@@ -5,6 +5,9 @@ a { color: var(--accent); }
 .topbar .brand { text-decoration: none; color: inherit; }
 .topbar .brand:hover .brand-mark { filter: brightness(1.1); }
 
+.topbar-zeile { display: flex; align-items: center; gap: 12px; }
+.topbar-body { display: flex; align-items: center; gap: 20px; flex: 1; flex-wrap: wrap; justify-content: space-between; }
+
 .topnav { display: flex; gap: 4px; flex-wrap: wrap; flex: 1; justify-content: center; }
 
 .navlink {
@@ -25,6 +28,40 @@ a { color: var(--accent); }
 .navlink span { font-size: 15px; }
 
 .topright { display: flex; align-items: center; gap: 12px; }
+
+.btn-abmelden { font-size: 12px; padding: 8px 13px; color: var(--muted); }
+.btn-abmelden:hover { color: var(--risk); border-color: var(--risk); }
+
+/* Hamburger-Umschalter: nur sichtbar, wenn die Kopfzeile einklappbar ist (siehe Responsive) */
+.topbar-toggle {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: var(--bg-3);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.topbar-toggle span,
+.topbar-toggle span::before,
+.topbar-toggle span::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.15s, opacity 0.15s;
+}
+.topbar-toggle span { top: 17px; }
+.topbar-toggle span::before { top: -6px; }
+.topbar-toggle span::after { top: 6px; }
+.topbar-toggle.offen span { background: transparent; }
+.topbar-toggle.offen span::before { top: 0; transform: rotate(45deg); }
+.topbar-toggle.offen span::after { top: 0; transform: rotate(-45deg); }
 .lernuhr {
   display: inline-flex;
   align-items: center;
@@ -329,9 +366,31 @@ a { color: var(--accent); }
 
 /* ---------------------------------------------------------- Responsive */
 
-@media (max-width: 1150px) {
+@media (max-width: 1150px) and (min-width: 761px) {
   .topnav { order: 3; width: 100%; justify-content: flex-start; }
   .topbar { gap: 12px; }
+}
+
+/* Unter 760px waechst die Nav-Liste vertikal und frisst zu viel Platz -
+   deshalb Kopfzeile einklappbar machen: nur Marke + Umschalter sichtbar,
+   Navigation und Lernzeit/Abmelden liegen bis zum Antippen verborgen. */
+@media (max-width: 760px) {
+  .topbar { flex-direction: column; align-items: stretch; padding: 12px 16px; }
+  .topbar-zeile { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .topbar-toggle { display: block; }
+  .topbar-body {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .topbar-body.offen { display: flex; }
+  .topnav { flex-direction: column; gap: 4px; }
+  .navlink { width: 100%; }
+  .topright { justify-content: space-between; }
 }
 
 @media (max-width: 620px) {
@@ -340,6 +399,4 @@ a { color: var(--accent); }
   .rang-zeile { grid-template-columns: minmax(0, 1fr) 62px; }
   .rang-zeile .rang-balken { display: none; }
   .form-reihe { grid-template-columns: 1fr; }
-  .navlink { font-size: 12px; padding: 7px 10px; }
-  .topnav { gap: 2px; }
 }

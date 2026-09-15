@@ -46,23 +46,31 @@ export function renderNav(aktiv, { titel, untertitel } = {}) {
   const kopf = document.createElement("header");
   kopf.className = "topbar";
   kopf.innerHTML = `
-    <a class="brand" href="index.html" title="Zum Hauptmenü">
-      <span class="brand-mark">AE</span>
-      <div>
-        <h1>${titel || seite?.titel || "AEVO Trainer"}</h1>
-        <p>${untertitel || "AEVO Trainer · IHK Nürnberg 2026"}</p>
+    <div class="topbar-zeile">
+      <a class="brand" href="index.html" title="Zum Hauptmenü">
+        <span class="brand-mark">AE</span>
+        <div>
+          <h1>${titel || seite?.titel || "AEVO Trainer"}</h1>
+          <p>${untertitel || "AEVO Trainer · IHK Nürnberg 2026"}</p>
+        </div>
+      </a>
+      <button class="topbar-toggle" id="topbarToggle" type="button" aria-expanded="false" aria-controls="topbarBody" title="Menü">
+        <span></span>
+      </button>
+    </div>
+    <div class="topbar-body" id="topbarBody">
+      <nav class="topnav">
+        ${SEITEN.map(
+          (s) => `<a href="${s.datei}" class="navlink${s.id === aktiv ? " active" : ""}"><span>${s.icon}</span>${s.titel}</a>`,
+        ).join("")}
+      </nav>
+      <div class="topright">
+        <span class="lernuhr" id="lernuhr" title="Aktive Lernzeit heute">⏱ <strong id="lernuhrWert">0 min</strong></span>
+        <button class="btn ghost btn-abmelden" id="btnAbmelden" type="button" title="Abmelden">⎋ Abmelden</button>
       </div>
-    </a>
-    <nav class="topnav">
-      ${SEITEN.map(
-        (s) => `<a href="${s.datei}" class="navlink${s.id === aktiv ? " active" : ""}"><span>${s.icon}</span>${s.titel}</a>`,
-      ).join("")}
-    </nav>
-    <div class="topright">
-      <span class="lernuhr" id="lernuhr" title="Aktive Lernzeit heute">⏱ <strong id="lernuhrWert">0 min</strong></span>
-      <button class="navlink" id="btnAbmelden" type="button" title="Abmelden">⎋ Abmelden</button>
     </div>`;
   document.body.prepend(kopf);
+
   kopf.querySelector("#btnAbmelden").addEventListener("click", async () => {
     try {
       await fetch("/api/logout", { method: "POST" });
@@ -70,6 +78,16 @@ export function renderNav(aktiv, { titel, untertitel } = {}) {
       location.href = "/login.html";
     }
   });
+
+  const knopf = kopf.querySelector("#topbarToggle");
+  const koerper = kopf.querySelector("#topbarBody");
+  knopf.addEventListener("click", () => {
+    const offen = koerper.classList.toggle("offen");
+    knopf.setAttribute("aria-expanded", String(offen));
+    knopf.classList.toggle("offen", offen);
+  });
+  // Nach Klick auf einen Menüpunkt (mobil) wieder einklappen, bevor die Seite wechselt.
+  koerper.querySelectorAll(".navlink").forEach((a) => a.addEventListener("click", () => koerper.classList.remove("offen")));
 }
 
 // ------------------------------------------------------------- Lernzeit

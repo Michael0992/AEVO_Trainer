@@ -405,6 +405,8 @@ function starteVorlesen() {
 let erkennung = null;
 let nimmtAuf = false;
 let basisText = "";
+let bearbeiteteIndizes = new Set();
+let neustartTimer = null;
 
 function initMikrofon() {
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -419,15 +421,26 @@ function initMikrofon() {
   erkennung.continuous = true;
   erkennung.interimResults = true;
 
+  // Jede (auch automatisch neu gestartete) Aufnahme beginnt mit frischen Indizes -
+  // ohne das wuerden auf Chrome/Android bereits verarbeitete Endergebnisse erneut
+  // als "isFinal" gemeldet und der Text wuerde sich verdoppeln/verdreifachen.
+  erkennung.addEventListener("start", () => {
+    bearbeiteteIndizes = new Set();
+  });
+
   erkennung.addEventListener("result", (ev) => {
-    let endgueltig = "";
     let vorlaeufig = "";
     for (let i = ev.resultIndex; i < ev.results.length; i++) {
-      const t = ev.results[i][0].transcript;
-      if (ev.results[i].isFinal) endgueltig += t + " ";
-      else vorlaeufig += t;
+      const r = ev.results[i];
+      const t = r[0].transcript;
+      if (r.isFinal) {
+        if (bearbeiteteIndizes.has(i)) continue; // bereits uebernommen - Android meldet Endergebnisse mehrfach
+        bearbeiteteIndizes.add(i);
+        basisText = (basisText + " " + t).replace(/\s+/g, " ").trim();
+      } else {
+        vorlaeufig += t;
+      }
     }
-    if (endgueltig) basisText = (basisText + " " + endgueltig).replace(/\s+/g, " ").trim();
     $("antwort").value = (basisText + (vorlaeufig ? " " + vorlaeufig : "")).trim();
     state.eingabe = "mikrofon";
     zaehleWoerter();
@@ -446,13 +459,18 @@ function initMikrofon() {
   });
 
   erkennung.addEventListener("end", () => {
-    if (nimmtAuf) {
+    clearTimeout(neustartTimer);
+    if (!nimmtAuf) return;
+    // Kurze Pause vor dem Neustart: startet man sofort neu, laeuft auf Chrome/Android
+    // die alte native Sitzung teils noch nach und liefert parallel doppelte Ergebnisse.
+    neustartTimer = setTimeout(() => {
+      if (!nimmtAuf) return;
       try {
         erkennung.start();
       } catch {
         stoppeAufnahme();
       }
-    }
+    }, 300);
   });
 }
 
@@ -476,6 +494,7 @@ function starteAufnahme() {
 
 function stoppeAufnahme() {
   if (!erkennung) return;
+  clearTimeout(neustartTimer);
   const warAktiv = nimmtAuf;
   nimmtAuf = false;
   try {

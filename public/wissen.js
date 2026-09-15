@@ -297,6 +297,8 @@ async function freieFrageStellen() {
 let erkennung = null;
 let ziel = null;
 let basisText = "";
+let bearbeiteteIndizes = new Set();
+let neustartTimer = null;
 
 function initMikrofone() {
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -312,29 +314,45 @@ function initMikrofone() {
   erkennung.continuous = true;
   erkennung.interimResults = true;
 
+  // Jede (auch automatisch neu gestartete) Aufnahme beginnt mit frischen Indizes -
+  // ohne das wuerden auf Chrome/Android bereits verarbeitete Endergebnisse erneut
+  // als "isFinal" gemeldet und der Text wuerde sich verdoppeln/verdreifachen.
+  erkennung.addEventListener("start", () => {
+    bearbeiteteIndizes = new Set();
+  });
+
   erkennung.addEventListener("result", (ev) => {
     if (!ziel) return;
-    let endgueltig = "";
     let vorlaeufig = "";
     for (let i = ev.resultIndex; i < ev.results.length; i++) {
-      const t = ev.results[i][0].transcript;
-      if (ev.results[i].isFinal) endgueltig += t + " ";
-      else vorlaeufig += t;
+      const r = ev.results[i];
+      const t = r[0].transcript;
+      if (r.isFinal) {
+        if (bearbeiteteIndizes.has(i)) continue; // bereits uebernommen - Android meldet Endergebnisse mehrfach
+        bearbeiteteIndizes.add(i);
+        basisText = (basisText + " " + t).replace(/\s+/g, " ").trim();
+      } else {
+        vorlaeufig += t;
+      }
     }
-    if (endgueltig) basisText = (basisText + " " + endgueltig).replace(/\s+/g, " ").trim();
     ziel.feld.value = (basisText + (vorlaeufig ? " " + vorlaeufig : "")).trim();
     if (ziel.id === "uebung") zaehleWoerter();
   });
 
   erkennung.addEventListener("error", () => stoppeAufnahme());
   erkennung.addEventListener("end", () => {
-    if (ziel) {
+    clearTimeout(neustartTimer);
+    if (!ziel) return;
+    // Kurze Pause vor dem Neustart: startet man sofort neu, laeuft auf Chrome/Android
+    // die alte native Sitzung teils noch nach und liefert parallel doppelte Ergebnisse.
+    neustartTimer = setTimeout(() => {
+      if (!ziel) return;
       try {
         erkennung.start();
       } catch {
         stoppeAufnahme();
       }
-    }
+    }, 300);
   });
 }
 
@@ -359,6 +377,7 @@ function starteAufnahme(id, feld, taste) {
 
 function stoppeAufnahme() {
   if (!erkennung || !ziel) return;
+  clearTimeout(neustartTimer);
   const alt = ziel;
   ziel = null;
   try {
