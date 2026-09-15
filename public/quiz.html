@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prüfungsquiz – AEVO Trainer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1014'/%3E%3Cpath d='M9 22 16 9l7 13' stroke='%23ffb224' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="stats">
+          <div class="score-ring" id="scoreRing" style="--pct: 0">
+            <div class="score-ring-inner">
+              <strong id="avgScore">–</strong>
+              <span>Ø / 10</span>
+            </div>
+          </div>
+          <dl>
+            <div><dt>Beantwortet</dt><dd id="statAnswered">0</dd></div>
+            <div><dt>Schwach (&lt; 6)</dt><dd id="statWeak">0</dd></div>
+            <div><dt>Heute</dt><dd id="statHeute">0</dd></div>
+          </dl>
+        </div>
+
+        <div class="filters">
+          <label class="field">
+            <span>Bereich</span>
+            <select id="filterBereich"><option value="">Alle Bereiche</option></select>
+          </label>
+          <label class="field">
+            <span>Kategorie</span>
+            <select id="filterKategorie"><option value="">Alle Kategorien</option></select>
+          </label>
+          <label class="field">
+            <span>Suche</span>
+            <input id="filterSuche" type="search" placeholder="Stichwort …" />
+          </label>
+          <div class="filter-actions">
+            <button id="btnRandom" class="btn ghost" type="button">Zufällige Frage</button>
+            <button id="btnOpen" class="btn ghost" type="button">Nur offene</button>
+          </div>
+          <label class="field">
+            <span>Modell für die Bewertung</span>
+            <select id="modelSelect"></select>
+          </label>
+        </div>
+
+        <ol class="question-list" id="questionList"></ol>
+      </aside>
+
+      <section class="content">
+        <article class="card question-card">
+          <div class="card-head">
+            <div>
+              <span class="chip" id="qBereich">–</span>
+              <span class="chip chip-muted" id="qKategorie">–</span>
+            </div>
+            <span class="counter" id="qCounter">–</span>
+          </div>
+
+          <h2 id="qText">Frage wird geladen …</h2>
+
+          <details class="context" id="qKontextBox" hidden>
+            <summary>Situationskontext der Musterunterweisung</summary>
+            <p id="qKontext"></p>
+          </details>
+
+          <div class="answer-block">
+            <div class="answer-head">
+              <label for="antwort">Deine Antwort</label>
+              <div class="answer-tools">
+                <span class="hint" id="micHint"></span>
+                <button id="btnMic" class="btn mic" type="button" title="Antwort diktieren">
+                  <span class="mic-icon">🎙</span><span id="micLabel">Diktieren</span>
+                </button>
+              </div>
+            </div>
+            <textarea id="antwort" rows="9" placeholder="Antworte frei – oder diktiere über das Mikrofon. Struktur: Entscheidung – Begründung – Alternative – Praxisbeleg – Kontrolle."></textarea>
+            <div class="answer-foot">
+              <span id="wordCount">0 Wörter</span>
+              <div class="btn-row">
+                <button id="btnMuster" class="btn ghost" type="button">Musterantwort</button>
+                <button id="btnEval" class="btn primary" type="button">Antwort bewerten</button>
+                <button id="btnNext" class="btn ghost" type="button">Nächste ›</button>
+              </div>
+            </div>
+          </div>
+
+          <p class="error" id="fehler" hidden></p>
+        </article>
+
+        <article class="card result-card" id="resultCard" hidden>
+          <div class="result-head">
+            <div class="points"><strong id="resPoints">0</strong><span>/ 10 Punkte</span></div>
+            <div class="bars" id="resBars"></div>
+          </div>
+
+          <div class="answer-foot" style="margin-top: 14px">
+            <span id="resMeta"></span>
+            <div class="btn-row">
+              <button id="btnVorlesen" class="btn sprechen" type="button">🔊 Feedback vorlesen</button>
+              <button id="btnStopp" class="btn ghost" type="button" hidden>■ Stopp</button>
+            </div>
+          </div>
+
+          <p class="verdict" id="resVerdict"></p>
+
+          <div class="result-grid">
+            <div class="res-col good"><h3>Getroffen</h3><ul id="resGood"></ul></div>
+            <div class="res-col miss"><h3>Gefehlt</h3><ul id="resMiss"></ul></div>
+            <div class="res-col risk"><h3>Fehler &amp; Fallen</h3><ul id="resRisk"></ul></div>
+          </div>
+
+          <div class="res-answer">
+            <h3>So klingt eine prüfungssichere Antwort</h3>
+            <p id="resModel"></p>
+          </div>
+          <p class="next-step" id="resNext"></p>
+        </article>
+
+        <article class="card muster-card" id="musterCard" hidden>
+          <h3>Musterantwort – Stichworte</h3>
+          <ul id="musterListe"></ul>
+          <p class="muster-extra" id="musterImpuls" hidden></p>
+          <p class="muster-extra" id="musterBeispiel" hidden></p>
+          <p class="muster-extra warn" id="musterFalle" hidden></p>
+          <p class="muster-extra" id="musterNachfrage" hidden></p>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="quiz.js"></script>
+  </body>
+</html>

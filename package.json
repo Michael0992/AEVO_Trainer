@@ -1,0 +1,19 @@
+{
+  "name": "aevo-trainer",
+  "version": "1.0.0",
+  "description": "AEVO-Prüfungstrainer (IHK Nürnberg 2026) mit Claude-gestützter Antwortbewertung",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.125.0",
+    "zod": "^4.6.2"
+  }
+}

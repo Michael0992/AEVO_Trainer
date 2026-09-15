@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profil – AEVO Trainer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1014'/%3E%3Cpath d='M9 22 16 9l7 13' stroke='%23ffb224' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <main class="seite">
+      <div class="seite-kopf">
+        <div>
+          <h2>Profil &amp; Einstellungen</h2>
+          <p>Alles bleibt auf diesem Rechner: Ergebnisse und Lernzeit in <span class="pfad">data/store.json</span>, API-Schlüssel in der <span class="pfad">.env</span>.</p>
+        </div>
+      </div>
+
+      <div class="kachel-reihe" id="kacheln"></div>
+
+      <article class="card chart-card">
+        <div class="chart-kopf">
+          <h3>Lernzeit pro Tag</h3>
+          <div class="zeitraum" id="zeitraum">
+            <button data-tage="14">14 Tage</button>
+            <button data-tage="30" class="active">30 Tage</button>
+            <button data-tage="90">90 Tage</button>
+          </div>
+        </div>
+        <div class="chart" id="chartLernzeit"></div>
+        <div class="chart-kopf" style="margin-top: 16px">
+          <h3>Lerntage im Jahr</h3>
+          <div class="chart-legende"><span>je Kästchen ein Tag · je kräftiger, desto länger gelernt</span></div>
+        </div>
+        <div class="heatmap" id="heatmap"></div>
+      </article>
+
+      <div class="profil-grid">
+        <article class="card">
+          <div class="chart-kopf"><h3>Persönliche Angaben</h3></div>
+
+          <div class="form-zeile">
+            <label for="pName">Name</label>
+            <input id="pName" type="text" placeholder="Wie sollen wir dich ansprechen?" />
+          </div>
+
+          <div class="form-reihe">
+            <div class="form-zeile">
+              <label for="pTermin">Prüfungstermin</label>
+              <input id="pTermin" type="date" />
+            </div>
+            <div class="form-zeile">
+              <label for="pZiel">Tagesziel (Minuten)</label>
+              <input id="pZiel" type="number" min="0" max="600" step="5" />
+            </div>
+          </div>
+
+          <div class="form-zeile">
+            <label for="pModell">Standardmodell für Bewertungen</label>
+            <select id="pModell"></select>
+            <small id="pModellInfo"></small>
+          </div>
+
+          <div class="chart-kopf" style="margin-top: 22px"><h3>Sprachausgabe</h3></div>
+
+          <div class="form-zeile">
+            <label for="pStimme">Stimme</label>
+            <select id="pStimme"></select>
+            <small id="pStimmeInfo"></small>
+          </div>
+
+          <div class="form-reihe">
+            <div class="form-zeile">
+              <label for="pTempo">Sprechtempo <span id="pTempoWert">1.0</span>×</label>
+              <input id="pTempo" type="range" min="0.5" max="2" step="0.1" />
+            </div>
+            <div class="form-zeile">
+              <label>&nbsp;</label>
+              <button class="btn ghost" id="btnProbe" type="button">🔊 Stimme testen</button>
+            </div>
+          </div>
+
+          <label class="schalter">
+            <input id="pAuto" type="checkbox" />
+            <span>Feedback nach jeder Bewertung automatisch vorlesen</span>
+          </label>
+
+          <div class="btn-row">
+            <button class="btn primary" id="btnSpeichern" type="button">Speichern</button>
+          </div>
+          <p class="erfolg" id="profilOk" hidden style="margin-top: 12px"></p>
+        </article>
+
+        <article class="card">
+          <div class="chart-kopf"><h3>API-Schlüssel</h3></div>
+          <p style="font-size: 13px; color: var(--muted); margin-top: 0">
+            Der Schlüssel wird in der Datei <span class="pfad" id="envPfad">.env</span> im Projektordner abgelegt und nur von
+            diesem Rechner aus an die Claude API gesendet. Er steht auch anderen Programmen als Umgebungsvariable zur Verfügung.
+          </p>
+
+          <div id="keyListe"></div>
+
+          <div class="form-zeile">
+            <label for="neuerKey">Neuen Schlüssel eintragen oder ersetzen</label>
+            <input id="neuerKey" type="password" placeholder="sk-ant-..." autocomplete="off" spellcheck="false" />
+          </div>
+          <div class="key-tasten">
+            <button class="btn primary" id="btnKeySpeichern" type="button">Schlüssel speichern</button>
+            <button class="btn ghost" id="btnKeyTesten" type="button">Verbindung testen</button>
+          </div>
+          <p class="error" id="keyFehler" hidden style="margin-top: 12px"></p>
+          <p class="erfolg" id="keyOk" hidden style="margin-top: 12px"></p>
+
+          <div class="chart-kopf" style="margin-top: 26px"><h3>Daten</h3></div>
+          <p style="font-size: 13px; color: var(--muted); margin-top: 0">
+            <span id="datenInfo"></span>
+          </p>
+          <div class="key-tasten">
+            <button class="btn ghost" id="btnExport" type="button">Ergebnisse als JSON sichern</button>
+            <button class="btn danger-ghost" id="btnLoeschen" type="button">Alle Ergebnisse löschen</button>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <script type="module" src="profil.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2069 @@
+{
+  "titel": "AEVO Trainer – Nürnberg 2026",
+  "quelle": "Beispiel_AEVO_Nürnberg2026_LernstandskontrolleDozent.pdf (Dozentenmaterial, Stand August 2026)",
+  "hinweis": "Die Fragen sind eigenständig formulierte Trainingsfragen und keine veröffentlichten Originalprüfungsaufgaben. Aktuelle Einladung, Vordrucke und Hinweise der IHK Nürnberg haben Vorrang.",
+  "pruefungsrahmen": {
+    "handlungsfelder": [
+      "1 Planung",
+      "2 Vorbereitung/Einstellung",
+      "3 Durchführung",
+      "4 Abschluss"
+    ],
+    "schriftlich": "fallbezogene Aufgaben aus allen Handlungsfeldern; Soll-Dauer 3 Stunden",
+    "praktisch": "Präsentation einer Ausbildungssituation oder praktische Durchführung plus Fachgespräch; insgesamt höchstens 30 Minuten, Präsentation höchstens 15 Minuten",
+    "bestehen": "jeder Prüfungsteil mindestens „ausreichend“"
+  },
+  "bewertungsraster": [
+    "fachlich/rechtlich korrekt",
+    "klare Struktur und Priorisierung",
+    "adressatengerechte Begründung",
+    "konkreter betrieblicher Bezug",
+    "Erfolgskontrolle bzw. Evaluation",
+    "Alternativen und Grenzen reflektiert"
+  ],
+  "antwortschema": [
+    "Entscheidung: „Ich habe … gewählt.“",
+    "Begründung: „Das passt, weil Lernziel, Zielperson und Rahmen …“",
+    "Alternative: „Möglich wäre auch …; dies wäre geeigneter, wenn …“",
+    "Praxisbeleg: „In meiner Durchführung zeigte sich das durch …“",
+    "Kontrolle: „Die Zielerreichung prüfe ich anhand …“"
+  ],
+  "szenario": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss.",
+  "fragen": [
+    {
+      "id": "hf-1",
+      "nr": 1,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Welchen Nutzen hat betriebliche Ausbildung für einen Betrieb?",
+      "stichworte": [
+        "Fachkräftenachwuchs sichern",
+        "passgenaue Qualifizierung für betriebliche Prozesse",
+        "Mitarbeiterbindung und Arbeitgeberimage",
+        "Wissenstransfer und Innovationsimpulse",
+        "Kosten und Nutzen langfristig abwägen"
+      ],
+      "unterrichtsimpuls": "Lass die Gruppe eine Nutzenargumentation für die Geschäftsführung formulieren.",
+      "beispiel": "Ein IT-Betrieb stellt Ausbildungskosten den vermiedenen Rekrutierungs- und Einarbeitungskosten gegenüber.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-2",
+      "nr": 2,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Welche Voraussetzungen muss ein Betrieb erfüllen, um ausbilden zu dürfen?",
+      "stichworte": [
+        "Eignung der Ausbildungsstätte",
+        "Art und Einrichtung passend zum Ausbildungsberuf",
+        "angemessenes Verhältnis Fachkräfte/Auszubildende",
+        "persönlich und fachlich geeignete Ausbildende bzw. Ausbilder",
+        "fehlende Inhalte ggf. durch Verbund oder überbetriebliche Maßnahmen abdecken"
+      ],
+      "unterrichtsimpuls": "Prüfung als Ampel-Check: vollständig, ergänzbar, nicht geeignet.",
+      "beispiel": "Eine kleine Agentur vermittelt Buchhaltung über einen Verbundpartner.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-3",
+      "nr": 3,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Wie unterscheiden sich Ausbildender, Ausbilder und Ausbildungsbeauftragter?",
+      "stichworte": [
+        "Ausbildender: Vertragspartner/Betrieb",
+        "Ausbilder: verantwortliche, persönlich und fachlich geeignete Person",
+        "Ausbildungsbeauftragter: wirkt unter Verantwortung des Ausbilders mit",
+        "Aufgaben, Weisungswege und Kontrolle eindeutig festlegen"
+      ],
+      "unterrichtsimpuls": "Rollen auf Karten verteilen und Zuständigkeiten zuordnen.",
+      "beispiel": "Die GmbH ist Ausbildender, Frau König verantwortliche Ausbilderin, der Lagerleiter Ausbildungsbeauftragter.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-4",
+      "nr": 4,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Wie wählen Sie einen geeigneten Ausbildungsberuf aus?",
+      "stichworte": [
+        "betriebliche Arbeits- und Geschäftsprozesse analysieren",
+        "Ausbildungsordnung und Ausbildungsrahmenplan abgleichen",
+        "künftigen Fachkräftebedarf prüfen",
+        "personelle und sachliche Ressourcen bewerten",
+        "zuständige Stelle frühzeitig einbeziehen"
+      ],
+      "unterrichtsimpuls": "Vergleich zweier ähnlicher Ausbildungsberufe anhand realer Prozesslisten.",
+      "beispiel": "Ein Onlinehändler vergleicht Kaufmann/-frau im E-Commerce mit Kaufmann/-frau für Büromanagement.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-5",
+      "nr": 5,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Welche Funktion haben Ausbildungsordnung und Ausbildungsrahmenplan?",
+      "stichworte": [
+        "bundeseinheitliche Mindeststandards",
+        "Ausbildungsberufsbild, Dauer und Prüfungsanforderungen",
+        "Ausbildungsrahmenplan als sachlich-zeitliche Anleitung",
+        "Grundlage für betrieblichen Ausbildungsplan",
+        "betriebliche Besonderheiten zulässig, Mindestinhalte verbindlich"
+      ],
+      "unterrichtsimpuls": "Dokumenten-Puzzle: Begriffe und Funktionen zuordnen.",
+      "beispiel": "Aus dem Ausbildungsrahmenplan werden betriebliche Lernstationen abgeleitet.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-6",
+      "nr": 6,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Welche Lernorte wirken im dualen System zusammen?",
+      "stichworte": [
+        "Ausbildungsbetrieb",
+        "Berufsschule",
+        "ggf. überbetriebliche Bildungsstätte/Verbundbetrieb",
+        "abgestimmte Lernziele und Termine",
+        "Informationsaustausch unter Beachtung des Datenschutzes"
+      ],
+      "unterrichtsimpuls": "Eine Lernortkooperations-Matrix erstellen.",
+      "beispiel": "Der Betrieb stimmt eine Projektphase mit dem Lernfeld der Berufsschule ab.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-7",
+      "nr": 7,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Wann ist Verbundausbildung sinnvoll?",
+      "stichworte": [
+        "Betrieb kann einzelne Inhalte nicht selbst vermitteln",
+        "Partner ergänzen Ausstattung oder Spezialwissen",
+        "Kooperationsvertrag und Verantwortlichkeiten",
+        "Ausbildungsplan und Beurteilung abstimmen",
+        "Gesamtverantwortung bleibt geklärt"
+      ],
+      "unterrichtsimpuls": "Fallarbeit mit einer unvollständigen betrieblichen Prozesslandschaft.",
+      "beispiel": "Ein Handwerksbetrieb nutzt ein Bildungszentrum für CNC-Technik.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-8",
+      "nr": 8,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Welche rechtlichen Regelwerke sind bei der Planung zentral?",
+      "stichworte": [
+        "BBiG bzw. HwO",
+        "AEVO",
+        "Ausbildungsordnung",
+        "Jugendarbeitsschutzgesetz",
+        "Arbeitszeit-, Urlaubs-, Mutterschutz- und Datenschutzrecht",
+        "Tarifvertrag, Betriebsvereinbarung und BetrVG"
+      ],
+      "unterrichtsimpuls": "Gesetzeslandkarte statt Paragraphenlernen.",
+      "beispiel": "Bei einer 17-jährigen Auszubildenden werden zusätzlich JArbSchG-Regeln geprüft.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-9",
+      "nr": 9,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Wie ermitteln Sie den betrieblichen Ausbildungsbedarf?",
+      "stichworte": [
+        "Personalbedarfsplanung",
+        "Altersstruktur und Fluktuation",
+        "technologische/organisatorische Entwicklung",
+        "Übernahmebedarf und Ausbildungsquote",
+        "Kapazitäten und Wirtschaftlichkeit"
+      ],
+      "unterrichtsimpuls": "Kleingruppen treffen eine begründete Ausbildungsentscheidung.",
+      "beispiel": "Wegen anstehender Verrentungen plant ein Betrieb zwei Mechatronik-Ausbildungsplätze.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-10",
+      "nr": 10,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 1: Ausbildungsvoraussetzungen prüfen und Ausbildung planen",
+      "frage": "Was bedeutet persönliche und fachliche Eignung?",
+      "stichworte": [
+        "persönliche Eignung: keine relevanten Beschäftigungs-/Ausbildungsverbote oder schweren Verstöße",
+        "fachliche Eignung: berufliche Fertigkeiten, Kenntnisse und Fähigkeiten",
+        "berufs- und arbeitspädagogische Eignung",
+        "zuständige Stelle überwacht",
+        "AEVO-Nachweis ersetzt nicht automatisch berufliche Fachqualifikation"
+      ],
+      "unterrichtsimpuls": "Mythos-Check: 'AEVO-Schein = ich darf jeden Beruf ausbilden'.",
+      "beispiel": "Eine Person mit AEVO, aber ohne passende berufliche Kompetenz, benötigt fachlich geeignete Unterstützung.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-11",
+      "nr": 11,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Wie entsteht ein betrieblicher Ausbildungsplan?",
+      "stichworte": [
+        "Ausbildungsrahmenplan als Ausgangspunkt",
+        "betriebliche Prozesse und Lernorte zuordnen",
+        "sachliche und zeitliche Gliederung",
+        "Urlaub, Berufsschule, Prüfungen und Puffer berücksichtigen",
+        "individuell anpassen und fortschreiben"
+      ],
+      "unterrichtsimpuls": "Teilnehmende bauen aus einer Berufsbildposition eine Lernsequenz.",
+      "beispiel": "Kundenauftrag wird vom Beobachten über Teilaufgaben bis zur selbstständigen Bearbeitung aufgebaut.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-12",
+      "nr": 12,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Welche Mindestangaben gehören in den Berufsausbildungsvertrag?",
+      "stichworte": [
+        "Art, Ziel und Gliederung der Ausbildung",
+        "Beginn und Dauer",
+        "Ausbildungsstätte und Maßnahmen außerhalb",
+        "tägliche Ausbildungszeit",
+        "Probezeit, Vergütung, Urlaub",
+        "Kündigungsvoraussetzungen und Hinweise auf Regelwerke"
+      ],
+      "unterrichtsimpuls": "Fehlerhaften Mustervertrag prüfen lassen.",
+      "beispiel": "Im Vertrag fehlt die Ausbildungsvergütung; die Gruppe identifiziert den Mangel.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-13",
+      "nr": 13,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Wie lange darf die Probezeit dauern?",
+      "stichworte": [
+        "mindestens ein Monat",
+        "höchstens vier Monate",
+        "Eignung beider Seiten erproben",
+        "planmäßige Beobachtung und Feedback",
+        "bei erheblicher Unterbrechung Verlängerung nur rechtlich geprüft/vereinbart"
+      ],
+      "unterrichtsimpuls": "Probezeitplan mit Beobachtungskriterien entwickeln.",
+      "beispiel": "Feedback nach Woche 2, 6 und 12 statt Bewertung erst am letzten Tag.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-14",
+      "nr": 14,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Wie gestalten Sie ein diskriminierungsarmes Auswahlverfahren?",
+      "stichworte": [
+        "anforderungsbezogene Kriterien",
+        "einheitliche Fragen und Bewertungsraster",
+        "AGG beachten",
+        "Vielfalt und unterschiedliche Bildungswege berücksichtigen",
+        "Barrierefreiheit/Nachteilsausgleich",
+        "personenbezogene Daten schützen"
+      ],
+      "unterrichtsimpuls": "Zwei Bewerbungen mit demselben Raster bewerten.",
+      "beispiel": "Praxisaufgabe und strukturiertes Interview ersetzen Bauchgefühl.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-15",
+      "nr": 15,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Welche Rolle spielen Betriebsrat und JAV?",
+      "stichworte": [
+        "Mitwirkungs- und Mitbestimmungsrechte beachten",
+        "JAV vertritt besondere Belange junger Beschäftigter und Auszubildender",
+        "frühzeitige Information und Beteiligung",
+        "Beschwerden und Verbesserungsvorschläge aufnehmen",
+        "gesetzliche Zuständigkeiten sauber trennen"
+      ],
+      "unterrichtsimpuls": "Rollenspiel Personalabteilung, Betriebsrat, JAV.",
+      "beispiel": "Vor Einführung eines neuen Auswahlverfahrens wird der Betriebsrat beteiligt.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-16",
+      "nr": 16,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Was ist bei minderjährigen Auszubildenden zusätzlich zu beachten?",
+      "stichworte": [
+        "JArbSchG",
+        "ärztliche Erstuntersuchung und ggf. Nachuntersuchung",
+        "besondere Arbeitszeit-, Pausen- und Urlaubsregeln",
+        "Beschäftigungsverbote und Gefährdungsbeurteilung",
+        "gesetzliche Vertretung beim Vertrag"
+      ],
+      "unterrichtsimpuls": "Grenzfälle zu Arbeitszeit und Berufsschule diskutieren.",
+      "beispiel": "Eine 17-Jährige wird an einem langen Berufsschultag nicht mehr im Betrieb eingesetzt.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-17",
+      "nr": 17,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Wie organisieren Sie die Lernortkooperation?",
+      "stichworte": [
+        "Ansprechpersonen benennen",
+        "Ausbildungs- und Rahmenlehrplan abgleichen",
+        "Termine, Lernstände und Förderbedarf abstimmen",
+        "Datenschutz und Einwilligung/Rechtsgrundlage beachten",
+        "regelmäßige, dokumentierte Austauschformate"
+      ],
+      "unterrichtsimpuls": "Kooperationskalender für ein Ausbildungsjahr erstellen.",
+      "beispiel": "Quartalsgespräch zwischen Betrieb und Berufsschule zu Projektkompetenzen.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-18",
+      "nr": 18,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Unter welchen Bedingungen ist Teilzeitberufsausbildung möglich?",
+      "stichworte": [
+        "Vereinbarung zwischen Ausbildendem und Auszubildendem",
+        "tägliche oder wöchentliche Ausbildungszeit reduzieren",
+        "Ausbildungsdauer verlängert sich grundsätzlich entsprechend",
+        "Berufsschule und zuständige Stelle koordinieren",
+        "Ausbildungsziel und Qualität sichern"
+      ],
+      "unterrichtsimpuls": "Rechen- und Planungsfall mit Betreuungszeiten.",
+      "beispiel": "Eine Auszubildende reduziert auf 75 Prozent; Plan und Vertragsdauer werden angepasst.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-19",
+      "nr": 19,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Was ist bei Ausbildungsteilen im Ausland zu planen?",
+      "stichworte": [
+        "Ausbildungsziel muss gewahrt bleiben",
+        "Inhalte und Betreuung festlegen",
+        "Vertrags-, Versicherungs- und Aufenthaltsfragen",
+        "Abstimmung mit zuständiger Stelle",
+        "Dokumentation und Anerkennung der Lernleistungen"
+      ],
+      "unterrichtsimpuls": "Risiko-Checkliste für eine Mobilitätsphase.",
+      "beispiel": "Vierwöchiger Einsatz im Partnerbetrieb mit Lernauftrag und Rückkehrgespräch.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-20",
+      "nr": 20,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 2: Ausbildung vorbereiten und bei der Einstellung mitwirken",
+      "frage": "Wie gelingt ein guter Ausbildungsstart?",
+      "stichworte": [
+        "strukturierter Onboarding-Plan",
+        "Rechte, Pflichten und Ansprechpartner",
+        "Arbeitsschutz und Datenschutz",
+        "Team, Lernorte und Arbeitsmittel",
+        "Erwartungen, Lernziele und Feedbackrhythmus"
+      ],
+      "unterrichtsimpuls": "Die Gruppe entwirft die ersten fünf Ausbildungstage.",
+      "beispiel": "Azubi-Rallye mit Sicherheitsstationen und erstem kleinen Arbeitsauftrag.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-21",
+      "nr": 21,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Woran erkennen Sie ein operationalisiertes Lernziel?",
+      "stichworte": [
+        "beobachtbares Verhalten",
+        "Bedingungen/Hilfsmittel",
+        "Qualitäts- oder Zeitmaßstab",
+        "passende Taxonomiestufe",
+        "Kontrolle eindeutig möglich"
+      ],
+      "unterrichtsimpuls": "Unpräzise Lernziele gemeinsam messbar formulieren.",
+      "beispiel": "'Der Azubi erstellt eine fehlerfreie Rechnung in 15 Minuten mit dem ERP-System.'",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-22",
+      "nr": 22,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie unterscheiden sich Richt-, Grob- und Feinlernziel?",
+      "stichworte": [
+        "Richtlernziel: breiter Bereich aus Ausbildungsordnung",
+        "Groblernziel: abgegrenzte Kompetenz",
+        "Feinlernziel: konkrete betriebliche Lernsituation",
+        "kognitive, psychomotorische und affektive Anteile",
+        "Feinlernziel messbar formulieren"
+      ],
+      "unterrichtsimpuls": "Lernziel-Treppe an einem Berufsthema bauen.",
+      "beispiel": "Vom Bereich Kundenservice zum selbstständigen Reklamationsgespräch.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-23",
+      "nr": 23,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wann eignet sich die Vier-Stufen-Methode?",
+      "stichworte": [
+        "klar strukturierte praktische Fertigkeit",
+        "Vorbereiten/Erklären und Vormachen/Nachmachen/Üben",
+        "Sicherheits- und Qualitätsaspekte gut demonstrierbar",
+        "begrenzte Selbststeuerung",
+        "für komplexe Problemlösung oft Leittext, Projekt oder Lernauftrag geeigneter"
+      ],
+      "unterrichtsimpuls": "Methodenentscheidung begründen lassen, nicht nur Schritte aufsagen.",
+      "beispiel": "Sicheres Wechseln eines Sägeblatts wird demonstriert und eingeübt.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-24",
+      "nr": 24,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie funktioniert die Leittextmethode?",
+      "stichworte": [
+        "Leitfragen fördern selbstständiges Informieren",
+        "Planen, Entscheiden, Ausführen, Kontrollieren, Bewerten",
+        "Ausbilder als Lernbegleiter",
+        "geeignet für vollständige Handlungen",
+        "Reflexion und Transfer sichern"
+      ],
+      "unterrichtsimpuls": "Kleinen Leittext zu einem realen Auftrag entwickeln.",
+      "beispiel": "Azubi plant und prüft selbstständig die Warenannahme.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-25",
+      "nr": 25,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wann ist ein Lehrgespräch sinnvoll?",
+      "stichworte": [
+        "Vorwissen aktivieren",
+        "durch Fragen zur Erkenntnis führen",
+        "dialogisch und zielorientiert",
+        "offene und gestufte Fragen",
+        "Ergebnisse sichern und anwenden"
+      ],
+      "unterrichtsimpuls": "Fragenleiter vom Erinnern bis zum Begründen erstellen.",
+      "beispiel": "Gefahren einer Phishing-Mail werden anhand eines Beispiels entdeckt.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-26",
+      "nr": 26,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie wählen Sie eine Ausbildungsmethode aus?",
+      "stichworte": [
+        "Lernziel und Kompetenzniveau",
+        "Vorkenntnisse, Lernbedarf und Motivation",
+        "Komplexität und Sicherheitsrisiko",
+        "Zeit, Lernort, Gruppengröße und Medien",
+        "Selbstständigkeit und Transfer",
+        "Evaluation der Zielerreichung"
+      ],
+      "unterrichtsimpuls": "Methoden-Matching mit Begründung.",
+      "beispiel": "Für ein komplexes Kundenprojekt wird Projektmethode statt Vortrag gewählt.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-27",
+      "nr": 27,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie fördern Sie Motivation?",
+      "stichworte": [
+        "Sinn und Praxisbezug verdeutlichen",
+        "erreichbare, anspruchsvolle Ziele",
+        "Autonomie und Verantwortung dosiert erhöhen",
+        "zeitnahes, konkretes Feedback",
+        "Fortschritt sichtbar machen",
+        "soziale Zugehörigkeit und Wertschätzung"
+      ],
+      "unterrichtsimpuls": "Motivationsdiagnose anhand eines Falls.",
+      "beispiel": "Azubi übernimmt eine echte Teilaufgabe und präsentiert das Ergebnis im Team.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-28",
+      "nr": 28,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie führen Sie konstruktives Feedback?",
+      "stichworte": [
+        "zeitnah und konkret",
+        "beobachtbares Verhalten statt Persönlichkeit",
+        "Wirkung erläutern",
+        "Selbsteinschätzung erfragen",
+        "gemeinsame nächste Schritte",
+        "Stärken und Lernfelder ehrlich benennen"
+      ],
+      "unterrichtsimpuls": "Feedback mit Beobachtung-Wirkung-Wunsch üben.",
+      "beispiel": "'Zwei Pflichtfelder blieben leer; dadurch verzögerte sich die Freigabe. Bitte nutze künftig die Checkliste.'",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-29",
+      "nr": 29,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Was tun Sie bei Lernschwierigkeiten?",
+      "stichworte": [
+        "Ursachen gemeinsam klären",
+        "fachliche, methodische, sprachliche, soziale oder gesundheitliche Faktoren unterscheiden",
+        "Lernschritte, Methode und Tempo anpassen",
+        "Lernberatung und Unterstützungsangebote",
+        "Fortschritt dokumentieren",
+        "Grenzen beachten und Fachstellen einbeziehen"
+      ],
+      "unterrichtsimpuls": "Keine Ferndiagnosen: hypothesengeleitetes Gespräch trainieren.",
+      "beispiel": "Kurze Übungseinheiten und Visualisierung helfen bei wiederkehrenden Buchungsfehlern.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-30",
+      "nr": 30,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie lösen Sie Konflikte mit Auszubildenden?",
+      "stichworte": [
+        "früh und unter vier Augen ansprechen",
+        "Sachverhalt und Perspektiven klären",
+        "Regeln und Erwartungen transparent",
+        "Lösung und konkrete Vereinbarung",
+        "Nachtermin und Dokumentation",
+        "Eskalationsweg verhältnismäßig"
+      ],
+      "unterrichtsimpuls": "Konfliktgespräch als Rollenspiel mit Beobachtungsbogen.",
+      "beispiel": "Wiederholte Unpünktlichkeit wird mit Ursachenklärung und verbindlichem Maßnahmenplan bearbeitet.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-31",
+      "nr": 31,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie beurteilen Sie Leistungen möglichst objektiv?",
+      "stichworte": [
+        "bekannte Kriterien und Standards",
+        "mehrere Beobachtungen/Situationen",
+        "Beurteilungsfehler reflektieren",
+        "Selbst- und Fremdeinschätzung",
+        "Belege dokumentieren",
+        "Entwicklungshinweise statt reiner Note"
+      ],
+      "unterrichtsimpuls": "Halo-, Milde- und Primacy-Effekt anhand kurzer Vignetten erkennen.",
+      "beispiel": "Ein Bewertungsbogen trennt Fachqualität, Prozess, Kommunikation und Selbstständigkeit.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-32",
+      "nr": 32,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie fördern Sie selbstständiges Lernen?",
+      "stichworte": [
+        "vollständige Arbeitsaufträge",
+        "Wahlmöglichkeiten und Verantwortung",
+        "Leitfragen statt vorschneller Lösungen",
+        "Reflexion über Lernstrategie",
+        "Fehler als Lernanlass bei sicherem Rahmen",
+        "Unterstützung schrittweise reduzieren"
+      ],
+      "unterrichtsimpuls": "Aus einer Anweisung einen handlungsorientierten Lernauftrag machen.",
+      "beispiel": "Azubi plant ein Kundengespräch, führt es durch und wertet es aus.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-33",
+      "nr": 33,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie gehen Sie mit Fehlern um?",
+      "stichworte": [
+        "Gefährdung und Schadensrisiko zuerst begrenzen",
+        "Fehler sachlich analysieren",
+        "Ursache statt Schuldzuweisung",
+        "Korrektur und Prävention",
+        "Lerntransfer dokumentieren",
+        "offene Fehlerkultur vorleben"
+      ],
+      "unterrichtsimpuls": "Fehleranalyse mit 'Was ist passiert? Warum? Was ändern wir?'.",
+      "beispiel": "Nach falscher Kommissionierung entwickelt der Azubi eine eigene Prüfroutine.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-34",
+      "nr": 34,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Was bedeutet handlungsorientiert ausbilden?",
+      "stichworte": [
+        "berufstypische vollständige Handlung",
+        "Informieren, Planen, Entscheiden, Ausführen, Kontrollieren, Bewerten",
+        "realer oder realistischer Arbeitsauftrag",
+        "Fach-, Methoden-, Sozial- und Selbstkompetenz",
+        "Ausbilder begleitet und reflektiert"
+      ],
+      "unterrichtsimpuls": "Ein Unterrichtsthema in einen Kundenauftrag umwandeln.",
+      "beispiel": "Statt Produktmerkmale abzufragen, erstellt der Azubi ein passendes Angebot und begründet es.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-35",
+      "nr": 35,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 3: Ausbildung durchführen",
+      "frage": "Wie gestalten Sie eine Unterweisung für heterogene Lernende?",
+      "stichworte": [
+        "Vorkenntnisse diagnostizieren",
+        "klare Sprache und mehrere Zugänge",
+        "Aufgaben differenzieren",
+        "angemessene Hilfen/Scaffolding",
+        "Barrieren reduzieren und Nachteilsausgleich beachten",
+        "gemeinsames Lernziel bei individuellen Wegen"
+      ],
+      "unterrichtsimpuls": "Ein Lernauftrag in Basis-, Standard- und Transferstufe.",
+      "beispiel": "Checkliste, Video und Praxisdemo stehen alternativ zur Verfügung.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-36",
+      "nr": 36,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Wie bereiten Sie systematisch auf die Abschlussprüfung vor?",
+      "stichworte": [
+        "Prüfungsordnung und Termine klären",
+        "Kompetenzstand früh diagnostizieren",
+        "individuellen Lernplan erstellen",
+        "realistische Prüfungssimulationen",
+        "Lücken gezielt schließen",
+        "Stressbewältigung und Selbstorganisation"
+      ],
+      "unterrichtsimpuls": "Rückwärtsplanung vom Prüfungstermin.",
+      "beispiel": "Sechs Wochen vor der Prüfung startet ein Plan aus Diagnose, Übungsfällen und Reflexion.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-37",
+      "nr": 37,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Wer meldet zur Abschlussprüfung an?",
+      "stichworte": [
+        "Ausbildender sorgt für rechtzeitige Anmeldung",
+        "zuständige Stelle und Fristen beachten",
+        "Ausbildungsnachweis und erforderliche Unterlagen prüfen",
+        "Zulassungsvoraussetzungen kontrollieren",
+        "Auszubildenden über Ablauf/Besonderheiten informieren"
+      ],
+      "unterrichtsimpuls": "Anmelde-Checkliste als Prüfungsfall.",
+      "beispiel": "Fehlende Ausbildungsnachweise werden frühzeitig nachgearbeitet.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-38",
+      "nr": 38,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Wann kommt eine vorzeitige Zulassung in Betracht?",
+      "stichworte": [
+        "Leistungen rechtfertigen vorzeitige Prüfung",
+        "Antrag bei zuständiger Stelle",
+        "Berufsschul- und Betriebsleistungen einbeziehen",
+        "zuständige Stelle entscheidet",
+        "individuelle Beratung und Prüfungsreife"
+      ],
+      "unterrichtsimpuls": "Pro-und-Contra-Fall mit Leistungsdaten.",
+      "beispiel": "Sehr gute Leistungen und vollständige Kompetenzen sprechen für den Antrag.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-39",
+      "nr": 39,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Wann kann die Ausbildungsdauer verkürzt oder verlängert werden?",
+      "stichworte": [
+        "Verkürzung auf gemeinsamen Antrag bei zu erwartender Zielerreichung",
+        "Anrechnung einschlägiger Vorbildung möglich",
+        "Verlängerung auf Antrag des Auszubildenden, wenn nötig",
+        "Entscheidung durch zuständige Stelle",
+        "Ausbildungsplan und Vertrag anpassen"
+      ],
+      "unterrichtsimpuls": "Fälle sauber zwischen Verkürzung und vorzeitiger Zulassung unterscheiden.",
+      "beispiel": "Abitur kann eine Verkürzung begründen; längere Krankheit eine Verlängerung.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-40",
+      "nr": 40,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Welche Zeugnisse erhält ein Auszubildender?",
+      "stichworte": [
+        "betriebliches Zeugnis bei Beendigung",
+        "Angaben zu Art, Dauer und Ziel sowie erworbenen Fertigkeiten/Kenntnissen/Fähigkeiten",
+        "auf Verlangen qualifiziert: Verhalten und Leistung",
+        "wahr, klar und wohlwollend",
+        "zusätzlich Prüfungszeugnis der zuständigen Stelle und Berufsschulzeugnis"
+      ],
+      "unterrichtsimpuls": "Zeugnisformulierungen auf Aussage und Fairness prüfen.",
+      "beispiel": "Ein qualifiziertes Zeugnis beschreibt konkrete Arbeitsqualität ohne Geheimcodes.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-41",
+      "nr": 41,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Was passiert bei Nichtbestehen der Abschlussprüfung?",
+      "stichworte": [
+        "Ausbildungsverhältnis verlängert sich auf Verlangen bis zur nächstmöglichen Wiederholungsprüfung",
+        "gesetzliche Höchstgrenze beachten",
+        "Ergebnis analysieren",
+        "Förderplan und Wiederholungsvorbereitung",
+        "zuständige Stelle und Berufsschule koordinieren"
+      ],
+      "unterrichtsimpuls": "Gespräch nach Nichtbestehen simulieren.",
+      "beispiel": "Ausbilder und Azubi analysieren Teilbereiche und vereinbaren Übungsaufträge.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-42",
+      "nr": 42,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Wie führen Sie ein Abschlussgespräch?",
+      "stichworte": [
+        "Gesamtentwicklung würdigen",
+        "Selbst- und Fremdeinschätzung",
+        "Prüfung/Übergang reflektieren",
+        "Übernahme und Perspektiven transparent",
+        "Weiterbildungsmöglichkeiten",
+        "Feedback zur Ausbildungsqualität einholen"
+      ],
+      "unterrichtsimpuls": "Leitfaden mit Fragen beider Seiten erstellen.",
+      "beispiel": "Azubi benennt zwei Stärken, ein Lernfeld und einen Entwicklungswunsch.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-43",
+      "nr": 43,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Welche Weiterbildungswege können aufgezeigt werden?",
+      "stichworte": [
+        "Anpassungs- und Aufstiegsfortbildung",
+        "Fachwirt, Meister, Techniker je nach Bereich",
+        "Zusatzqualifikationen",
+        "Studium und berufsbegleitende Wege",
+        "Fördermöglichkeiten und Beratung",
+        "Abgleich mit Interessen und Laufbahn"
+      ],
+      "unterrichtsimpuls": "Bildungswege als individuelle Landkarte darstellen.",
+      "beispiel": "Nach kaufmännischer Ausbildung werden Fachwirt und duales Studium verglichen.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-44",
+      "nr": 44,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Wie evaluieren Sie die Ausbildungsqualität?",
+      "stichworte": [
+        "Prüfungsergebnisse und Kompetenzentwicklung",
+        "Feedback von Auszubildenden, Fachabteilungen und Berufsschule",
+        "Abbruch-, Fehlzeiten- und Übernahmeindikatoren",
+        "Qualität der Lernaufträge und Betreuung",
+        "Maßnahmen, Verantwortliche und Folgetermine"
+      ],
+      "unterrichtsimpuls": "Mini-Audit mit Daten und qualitativen Rückmeldungen.",
+      "beispiel": "Nach schwachen Projektergebnissen werden Lernaufträge und Feedbackrhythmus überarbeitet.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-45",
+      "nr": 45,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Handlungsfeld 4: Ausbildung abschließen",
+      "frage": "Was ist beim Übergang in Beschäftigung zu beachten?",
+      "stichworte": [
+        "rechtzeitig über Übernahme entscheiden",
+        "neuer Arbeitsvertrag statt stillschweigender Unklarheit",
+        "Eingruppierung und Aufgaben klären",
+        "Resturlaub/Zeugnisse/Unterlagen",
+        "Rollenwechsel vom Lernenden zur Fachkraft begleiten"
+      ],
+      "unterrichtsimpuls": "Übergabegespräch als Transferaufgabe.",
+      "beispiel": "Ein 90-Tage-Einarbeitungsplan schließt an die Ausbildung an.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-46",
+      "nr": 46,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Wie darf generative KI in der Ausbildung eingesetzt werden?",
+      "stichworte": [
+        "Lernziel und didaktischer Mehrwert zuerst",
+        "keine vertraulichen oder personenbezogenen Daten in nicht freigegebene Systeme",
+        "Ergebnisse kritisch prüfen und Quellen verifizieren",
+        "Eigenleistung und Kennzeichnung regeln",
+        "Kompetenzaufbau statt bloßer Lösungserzeugung",
+        "betriebliche KI-/IT-Richtlinien beachten"
+      ],
+      "unterrichtsimpuls": "Prompt, KI-Antwort und Qualitätsprüfung als Dreischritt.",
+      "beispiel": "Azubi lässt einen E-Mail-Entwurf erzeugen, prüft Fakten, Ton, Datenschutz und verbessert ihn.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-47",
+      "nr": 47,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Wie verhindern Sie, dass KI selbstständiges Lernen schwächt?",
+      "stichworte": [
+        "KI erst nach eigener Problemanalyse",
+        "Begründung und Transfer verlangen",
+        "Prozessdokumentation statt nur Endprodukt",
+        "gezielte Reflexionsfragen",
+        "Aufgaben mit betrieblichem Kontext",
+        "mündliche Plausibilitätsprüfung"
+      ],
+      "unterrichtsimpuls": "Zwei Aufgabenvarianten vergleichen: reine Ausgabe vs. nachvollziehbarer Lernprozess.",
+      "beispiel": "Azubi erklärt, welche KI-Vorschläge verworfen wurden und warum.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-48",
+      "nr": 48,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Was bedeuten die modernisierten Standardberufsbildpositionen für die Ausbildung?",
+      "stichworte": [
+        "verbindliche Mindestanforderungen in seit 1. August 2021 neu geordneten Berufen",
+        "vier Bereiche: Organisation/Recht, Sicherheit/Gesundheit, Umweltschutz/Nachhaltigkeit, digitalisierte Arbeitswelt",
+        "integrativ mit beruflichen Aufgaben vermitteln",
+        "im betrieblichen Ausbildungsplan sichtbar machen",
+        "handlungsorientiert prüfen und reflektieren"
+      ],
+      "unterrichtsimpuls": "Ein vorhandener Lernauftrag wird um die 'Qualifizierenden Vier' ergänzt.",
+      "beispiel": "Beim Beschaffungsauftrag werden Datenqualität, Ergonomie und Nachhaltigkeitskriterien mitbearbeitet.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-49",
+      "nr": 49,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Wie integrieren Sie Nachhaltigkeit ohne Zusatzunterricht?",
+      "stichworte": [
+        "ökologische, ökonomische und soziale Folgen im Arbeitsprozess",
+        "Material-, Energie- und Ressourcenverbrauch",
+        "Lebenszyklus und Entsorgung",
+        "betriebliche Ziele/Kennzahlen",
+        "Zielkonflikte begründen lassen"
+      ],
+      "unterrichtsimpuls": "Bestehende Arbeitsaufgabe mit Nachhaltigkeitsentscheidung erweitern.",
+      "beispiel": "Azubi vergleicht Verpackungen nach Kosten, Schutzwirkung und Umweltwirkung.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-50",
+      "nr": 50,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Wie gestalten Sie hybride oder mobile Ausbildungsphasen?",
+      "stichworte": [
+        "geeignete Lernziele und Aufgaben auswählen",
+        "Betreuung, Erreichbarkeit und Feedback sichern",
+        "Arbeitszeit und Arbeitsschutz",
+        "Datenschutz und Informationssicherheit",
+        "soziale Einbindung",
+        "Präsenzanteile für Praxis und Beziehung gezielt nutzen"
+      ],
+      "unterrichtsimpuls": "Eine hybride Lernwoche mit synchronen und asynchronen Elementen planen.",
+      "beispiel": "Täglicher Kurz-Check-in, digitaler Lernauftrag und wöchentliches Praxisfeedback.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-51",
+      "nr": 51,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Was tun Sie bei psychischer Belastung eines Auszubildenden?",
+      "stichworte": [
+        "Veränderung wertschätzend ansprechen",
+        "zuhören, nicht diagnostizieren",
+        "akute Gefährdung ernst nehmen und betriebliche Notfallwege",
+        "Vertrauenspersonen/Beratungsangebote nennen",
+        "Ausbildungsorganisation vorübergehend anpassen",
+        "Datenschutz und Grenzen der Ausbilderrolle"
+      ],
+      "unterrichtsimpuls": "Gesprächseinstiege trainieren; Diagnosebegriffe vermeiden.",
+      "beispiel": "Ausbilder spricht häufige Überforderung an und vermittelt mit Zustimmung an die Beratungsstelle.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-52",
+      "nr": 52,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Wie fördern Sie Demokratie und respektvolle Zusammenarbeit?",
+      "stichworte": [
+        "klare Regeln gegen Diskriminierung und menschenfeindliche Äußerungen",
+        "Perspektivwechsel und begründete Diskussion",
+        "Beteiligungsmöglichkeiten/JAV",
+        "Konflikte sachlich moderieren",
+        "betriebliche Werte und Grundrechte",
+        "bei Grenzverletzungen konsequent handeln"
+      ],
+      "unterrichtsimpuls": "Dilemma-Fall moderieren und Gesprächsregeln reflektieren.",
+      "beispiel": "Abwertender Kommentar im Team wird gestoppt, geklärt und pädagogisch nachbereitet.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-53",
+      "nr": 53,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Wie sichern Sie Datenschutz bei digitalen Lernmedien?",
+      "stichworte": [
+        "nur erforderliche Daten verarbeiten",
+        "freigegebene Systeme und Berechtigungen",
+        "Zweck, Aufbewahrung und Löschung",
+        "keine sensiblen Daten in Übungsfällen",
+        "Bild-/Tonaufnahmen nur mit tragfähiger Rechtsgrundlage",
+        "Datenschutzbeauftragte einbeziehen"
+      ],
+      "unterrichtsimpuls": "Ein digitales Quiz auf Datenschutzrisiken prüfen.",
+      "beispiel": "Kundendaten werden für Übungen konsequent anonymisiert.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-54",
+      "nr": 54,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Wie gehen Sie mit Cybersecurity als Ausbildungsinhalt um?",
+      "stichworte": [
+        "berufsspezifische Risiken",
+        "Passwort/MFA, Phishing und Berechtigungen",
+        "Meldewege bei Vorfällen",
+        "sichere Daten- und Gerätehandhabung",
+        "realistische Übungen ohne produktive Systeme zu gefährden",
+        "Fehlerkultur und schnelle Meldung"
+      ],
+      "unterrichtsimpuls": "Phishing-Fall analysieren und Meldekette üben.",
+      "beispiel": "Azubi erkennt verdächtigen Link, klickt nicht und meldet nach Prozess.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "hf-55",
+      "nr": 55,
+      "bereich": "Fragenkatalog",
+      "kategorie": "Aktuelle Prüfungsthemen (Stand August 2026)",
+      "frage": "Was ist bei der Ausbildungsvergütung 2026 aktuell?",
+      "stichworte": [
+        "gesetzliche Mindestausbildungsvergütung bei Ausbildungsbeginn 2026: 724 Euro im 1. Jahr",
+        "854 Euro im 2. Jahr",
+        "977 Euro im 3. Jahr",
+        "1.014 Euro im 4. Jahr",
+        "Tarifbindung und gesetzliche Ausnahmen/Angemessenheit zusätzlich prüfen",
+        "Beträge gelten nicht pauschal für bereits früher begonnene Verträge"
+      ],
+      "unterrichtsimpuls": "Rechtsstand-Frage mit Stichtag und Ausbildungsbeginn stellen.",
+      "beispiel": "Vertrag beginnt am 1. September 2026; einschlägiger Tarifvertrag wird vor Mindestwerten geprüft.",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": ""
+    },
+    {
+      "id": "fall-1",
+      "nr": 1,
+      "bereich": "Fachgesprächsfälle",
+      "kategorie": "Praktische Prüfung – Fachgesprächsfälle",
+      "frage": "Ihre 15-minütige Unterweisung läuft aus dem Ruder. Was ändern Sie?",
+      "stichworte": [
+        "Feinlernziel enger fassen",
+        "Vorwissen und Material vorbereiten",
+        "Kernhandlung priorisieren",
+        "Zeitpuffer und Erfolgskontrolle",
+        "Abbruchkriterium bei Sicherheitsrisiko"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": "Fall 1: Unterweisung scheitert zeitlich. Antworte aus der Rolle des Prüflings (Ausbilder/in) im Fachgespräch."
+    },
+    {
+      "id": "fall-2",
+      "nr": 2,
+      "bereich": "Fachgesprächsfälle",
+      "kategorie": "Praktische Prüfung – Fachgesprächsfälle",
+      "frage": "Warum haben Sie die Leittextmethode und nicht die Vier-Stufen-Methode gewählt?",
+      "stichworte": [
+        "komplexe vollständige Handlung",
+        "Selbstständigkeit als Lernziel",
+        "Vorwissen vorhanden",
+        "Ausbilder als Lernbegleiter",
+        "Qualität durch Kontroll- und Reflexionsphase"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": "Fall 2: Methode begründen. Antworte aus der Rolle des Prüflings (Ausbilder/in) im Fachgespräch."
+    },
+    {
+      "id": "fall-3",
+      "nr": 3,
+      "bereich": "Fachgesprächsfälle",
+      "kategorie": "Praktische Prüfung – Fachgesprächsfälle",
+      "frage": "Wie prüfen Sie, ob die Kompetenz auch in einer neuen Situation gelingt?",
+      "stichworte": [
+        "neuer, vergleichbarer Arbeitsauftrag",
+        "Kriterien vorab transparent",
+        "Beobachtung des Prozesses",
+        "Begründung der Entscheidungen",
+        "Feedback und erneuter Versuch"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": "Fall 3: Transfer sichern. Antworte aus der Rolle des Prüflings (Ausbilder/in) im Fachgespräch."
+    },
+    {
+      "id": "fall-4",
+      "nr": 4,
+      "bereich": "Fachgesprächsfälle",
+      "kategorie": "Praktische Prüfung – Fachgesprächsfälle",
+      "frage": "Sie bemerken nach der Präsentation einen methodischen Fehler. Wie reagieren Sie?",
+      "stichworte": [
+        "offen benennen",
+        "Auswirkung fachlich einordnen",
+        "bessere Alternative begründen",
+        "konkrete Anpassung beschreiben",
+        "Reflexionsfähigkeit zeigen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": "Fall 4: Fehler in der Präsentation. Antworte aus der Rolle des Prüflings (Ausbilder/in) im Fachgespräch."
+    },
+    {
+      "id": "fall-5",
+      "nr": 5,
+      "bereich": "Fachgesprächsfälle",
+      "kategorie": "Praktische Prüfung – Fachgesprächsfälle",
+      "frage": "Der Auszubildende verweigert die Aufgabe. Was tun Sie?",
+      "stichworte": [
+        "ruhig und vertraulich klären",
+        "Ursachen/Verständnis prüfen",
+        "Sinn, Erwartung und Grenzen",
+        "angemessene Wahlmöglichkeiten",
+        "Vereinbarung und Nachtermin",
+        "Eskalation nur verhältnismäßig"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": "Fall 5: Schwieriger Azubi. Antworte aus der Rolle des Prüflings (Ausbilder/in) im Fachgespräch."
+    },
+    {
+      "id": "fall-6",
+      "nr": 6,
+      "bereich": "Fachgesprächsfälle",
+      "kategorie": "Praktische Prüfung – Fachgesprächsfälle",
+      "frage": "Während der Durchführung wird eine Sicherheitsregel missachtet. Wie handeln Sie?",
+      "stichworte": [
+        "sofort stoppen und Gefahr sichern",
+        "Regel und Risiko erklären",
+        "korrekte Handlung demonstrieren/üben",
+        "Verständnis kontrollieren",
+        "Vorfall und Präventionsmaßnahme dokumentieren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "",
+      "antwortfalle": "",
+      "kontext": "Fall 6: Sicherheitsverstoß. Antworte aus der Rolle des Prüflings (Ausbilder/in) im Fachgespräch."
+    },
+    {
+      "id": "fg-1",
+      "nr": 1,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "A. Planung, Ziel und Einordnung",
+      "frage": "Warum haben Sie dieses Thema gewählt?",
+      "stichworte": [
+        "berufstypische IT-Service-Situation",
+        "klarer Arbeitsprozess",
+        "messbarer Lernerfolg in 15 Minuten",
+        "Sicherheit und Dokumentation integrierbar"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wo liegt der Bezug zur Ausbildungsordnung?",
+      "antwortfalle": "Nicht behaupten, die Prüfung eines Kabels sei wörtlich exakt so vorgeschrieben; in passende Berufsbildposition und betrieblichen Ausbildungsplan einordnen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-2",
+      "nr": 2,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "A. Planung, Ziel und Einordnung",
+      "frage": "Wie lautet Ihr Feinlernziel?",
+      "stichworte": [
+        "beobachtbare Handlung",
+        "Bedingung: bereitgestellter Tester und Prüfroutine",
+        "Maßstab: korrekt, vollständig, fehlerfrei",
+        "Selbstständigkeit am Ende"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Woran erkennen Sie konkret die Zielerreichung?",
+      "antwortfalle": "„Der Azubi versteht es“ ist nicht beobachtbar.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-3",
+      "nr": 3,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "A. Planung, Ziel und Einordnung",
+      "frage": "Welche Lernbereiche sprechen Sie an?",
+      "stichworte": [
+        "kognitiv: Funktionsprinzip und Anzeige",
+        "psychomotorisch: anschließen und bedienen",
+        "affektiv: Sorgfalt, Sicherheit, Dokumentation"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Welcher Lernbereich steht im Vordergrund?",
+      "antwortfalle": "Nicht zwanghaft exakt gleiche Gewichtung behaupten.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-4",
+      "nr": 4,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "A. Planung, Ziel und Einordnung",
+      "frage": "Warum ist das Thema für das erste Ausbildungsjahr geeignet?",
+      "stichworte": [
+        "überschaubare Teilhandlung",
+        "geringes Vorwissen ausreichend",
+        "Grundlage für spätere Netzwerkdiagnose",
+        "Verantwortung dosiert aufbauen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was müsste der Azubi bereits können?",
+      "antwortfalle": "Vorkenntnisse nicht nur unterstellen, sondern zu Beginn kurz prüfen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-5",
+      "nr": 5,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "A. Planung, Ziel und Einordnung",
+      "frage": "Wie ordnen Sie die Einheit in den betrieblichen Ausbildungsplan ein?",
+      "stichworte": [
+        "nach Netzwerkgrundlagen",
+        "vor komplexerer Fehlerdiagnose",
+        "Teil eines IT-Serviceprozesses",
+        "Dokumentation als wiederkehrender Standard"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was folgt als nächste Lerneinheit?",
+      "antwortfalle": "Keinen isolierten „Show-Termin“ ohne Vorher/Nachher darstellen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-6",
+      "nr": 6,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "A. Planung, Ziel und Einordnung",
+      "frage": "Warum haben Sie nur ein Feinlernziel?",
+      "stichworte": [
+        "15-Minuten-Grenze",
+        "klare Priorität",
+        "realistische Erfolgskontrolle",
+        "weitere Kompetenzen als Teilziele/Transfer"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wären mehrere Ziele verboten?",
+      "antwortfalle": "Nicht „verboten“ sagen; es geht um realistische Fokussierung.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-7",
+      "nr": 7,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "A. Planung, Ziel und Einordnung",
+      "frage": "Wie haben Sie die Adressatenanalyse berücksichtigt?",
+      "stichworte": [
+        "Ausbildungsjahr und Vorwissen",
+        "Lernerfahrung und Sprachstand",
+        "Motivation und Selbstständigkeit",
+        "individueller Unterstützungsbedarf"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was ändern Sie bei hoher Vorerfahrung?",
+      "antwortfalle": "Prüfungsausschuss nicht wie einen echten Azubi mit erfundener Biografie behandeln; Rolle transparent setzen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-8",
+      "nr": 8,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Warum wählen Sie eine modifizierte Vier-Stufen-Methode?",
+      "stichworte": [
+        "klar strukturierte praktische Fertigkeit",
+        "sicheres Modell durch Demonstration",
+        "unmittelbares eigenes Handeln",
+        "Üben und Erfolgskontrolle innerhalb kurzer Zeit"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Warum nicht die klassische Vier-Stufen-Methode?",
+      "antwortfalle": "Nicht nur vier Stufen aufzählen; Eignung für Lernziel und Zielperson begründen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-9",
+      "nr": 9,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Was ist an Ihrer Methode „modifiziert“?",
+      "stichworte": [
+        "Vorwissen durch Lehrgespräch aktivieren",
+        "Auszubildender verbalisiert Handlung",
+        "Hilfen schrittweise reduzieren",
+        "Transferfrage und Selbsteinschätzung ergänzen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Welche Phase fördert Selbstständigkeit?",
+      "antwortfalle": "Nicht die ganze Durchführung als Vortrag gestalten.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-10",
+      "nr": 10,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Welche Alternative wäre möglich?",
+      "stichworte": [
+        "Lernauftrag/Leittext bei mehr Zeit und Vorerfahrung",
+        "Lehrgespräch für kognitive Vertiefung",
+        "Partnerarbeit bei zwei Auszubildenden",
+        "Simulation/Fallmethode für reine Anzeigeninterpretation"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Warum ist Ihre Wahl heute besser?",
+      "antwortfalle": "Alternative nicht schlechtreden; situationsbezogen vergleichen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-11",
+      "nr": 11,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Warum verwenden Sie keine Projektmethode?",
+      "stichworte": [
+        "Aufgabe zu klein und Zeit zu kurz",
+        "Projekt braucht Planung, Entscheidung und längere Bearbeitung",
+        "hier Basistechnik zuerst sichern",
+        "später in vollständigen Serviceauftrag integrieren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wie könnte ein Folgeprojekt aussehen?",
+      "antwortfalle": "Projektmethode nicht als grundsätzlich ungeeignet darstellen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-12",
+      "nr": 12,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Wie aktivieren Sie den Auszubildenden?",
+      "stichworte": [
+        "Vorwissenfrage",
+        "Handlung selbst ausführen",
+        "Schritte begründen",
+        "Selbsteinschätzung",
+        "Transferproblem lösen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wie vermeiden Sie zu viel Redeanteil?",
+      "antwortfalle": "Fragen allein sind keine Aktivierung, wenn der Ausbilder sie sofort selbst beantwortet.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-13",
+      "nr": 13,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Wie berücksichtigen Sie das Prinzip der vollständigen Handlung?",
+      "stichworte": [
+        "Einheit ist bewusst eine Teilhandlung",
+        "Problemkontext und Ziel geben Orientierung",
+        "Ausführen, kontrollieren und bewerten enthalten",
+        "größere Planung/Entscheidung folgt im Serviceauftrag"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Fehlt nicht die Planungsphase?",
+      "antwortfalle": "Nicht künstlich jede Phase in 15 Minuten pressen; Einbettung ehrlich erklären.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-14",
+      "nr": 14,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Wie reduzieren Sie Ihre Hilfen?",
+      "stichworte": [
+        "zuerst Modell und Prüfschrittkarte",
+        "dann verbale Impulse",
+        "anschließend selbstständiger zweiter Durchlauf",
+        "nur bei Gefahr sofort eingreifen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was tun Sie, wenn der Azubi stockt?",
+      "antwortfalle": "Nicht vorschnell übernehmen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-15",
+      "nr": 15,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "B. Methodenwahl und Didaktik",
+      "frage": "Wie gehen Sie mit unterschiedlichen Lerntypen um?",
+      "stichworte": [
+        "keine starren Lerntypen diagnostizieren",
+        "mehrere Zugänge: sehen, hören, handeln, erklären",
+        "Vorwissen und tatsächlichen Lernbedarf beobachten",
+        "Material barrierearm gestalten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Welcher Lerntyp ist Ihr Azubi?",
+      "antwortfalle": "Keine wissenschaftlich fragwürdige Typisierung als feste Eigenschaft behaupten.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-16",
+      "nr": 16,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Wie schaffen Sie Motivation?",
+      "stichworte": [
+        "realer Störungsfall",
+        "Nutzen für spätere Supportaufgaben",
+        "erreichbare Herausforderung",
+        "sichtbarer Erfolg",
+        "wertschätzendes Feedback"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was tun Sie bei Desinteresse?",
+      "antwortfalle": "Nicht mit Prüfung, Strafe oder Hierarchie drohen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-17",
+      "nr": 17,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Wie prüfen Sie das Vorwissen?",
+      "stichworte": [
+        "offene Einstiegsfrage",
+        "kurzer Blick auf Kabel und Tester",
+        "Begriffe nicht nur abfragen, sondern anwenden lassen",
+        "Ergebnis für Hilfestellung nutzen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was machen Sie bei fehlendem Vorwissen?",
+      "antwortfalle": "Nicht den gesamten Plan unverändert durchziehen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-18",
+      "nr": 18,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Wie geben Sie Feedback?",
+      "stichworte": [
+        "zeitnah und konkret",
+        "beobachtbares Verhalten",
+        "erst Selbsteinschätzung",
+        "Stärke und nächster Schritt",
+        "erneute Anwendung ermöglichen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Nennen Sie eine konkrete Formulierung.",
+      "antwortfalle": "Pauschales Lob wie „super“ ohne Kriterium vermeiden.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-19",
+      "nr": 19,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Was tun Sie bei einem Bedienfehler?",
+      "stichworte": [
+        "Gefährdung prüfen",
+        "mit Frage zur Selbstkorrektur führen",
+        "bei Bedarf kurzen Hinweis geben",
+        "Schritt erneut ausführen lassen",
+        "Ursache in Auswertung klären"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wann greifen Sie sofort ein?",
+      "antwortfalle": "Fehler nicht aus pädagogischem Prinzip laufen lassen, wenn Gefahr oder Schaden droht.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-20",
+      "nr": 20,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Wie reagieren Sie auf eine falsche Interpretation der Anzeige?",
+      "stichworte": [
+        "Nachfrage zur Beobachtung",
+        "Anzeige mit Prüfschrittkarte abgleichen",
+        "Hypothese überprüfen",
+        "richtige Diagnose begründen lassen",
+        "Transfer auf zweite Anzeige"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Sagen Sie sofort die Lösung?",
+      "antwortfalle": "Nicht bloß korrigieren; Denkweg sichtbar machen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-21",
+      "nr": 21,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Wie kommunizieren Sie adressatengerecht?",
+      "stichworte": [
+        "kurze klare Sätze",
+        "Fachbegriffe erklären und korrekt nutzen",
+        "Blickkontakt und ruhige Körpersprache",
+        "eine Frage zur Zeit",
+        "Wartezeit nach Fragen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wie vermeiden Sie Suggestivfragen?",
+      "antwortfalle": "Keine Kette aus Ja/Nein-Fragen, die nur Zustimmung erzeugt.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-22",
+      "nr": 22,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Wie gehen Sie mit Prüfungsrollenspiel und künstlicher Situation um?",
+      "stichworte": [
+        "Rolle zu Beginn knapp setzen",
+        "Prüfer als Azubi ansprechen, ohne herablassend zu wirken",
+        "realistische Daten und Materialien",
+        "fachlich flexibel auf Antworten reagieren",
+        "nicht auswendig am Gegenüber vorbeispielen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was, wenn der Prüfer sehr kompetent antwortet?",
+      "antwortfalle": "Nicht die Rolle „erzwingen“; anspruchsvollere Begründungs-/Transferfrage nutzen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-23",
+      "nr": 23,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "C. Durchführung, Kommunikation und Motivation",
+      "frage": "Wie sichern Sie den roten Faden?",
+      "stichworte": [
+        "Problem–Ziel–Vormachen–Ausführen–Kontrollieren–Transfer",
+        "sichtbare Prüfschrittkarte",
+        "klare Übergänge",
+        "Zeitmarken im Ablauf",
+        "Material in Reihenfolge vorbereitet"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was kürzen Sie bei Zeitdruck?",
+      "antwortfalle": "Nicht Lernerfolgskontrolle oder Abschluss als Erstes streichen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-24",
+      "nr": 24,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "D. Lernerfolg, Transfer und Bewertung",
+      "frage": "Wie kontrollieren Sie den Lernerfolg?",
+      "stichworte": [
+        "neues Kabel selbstständig prüfen",
+        "beobachtbare Kriterien",
+        "Anzeige korrekt deuten",
+        "Dokumentation vollständig",
+        "keine lenkende Hilfe"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Warum reicht die Frage „Alles verstanden?“ nicht?",
+      "antwortfalle": "Selbstauskunft ist kein Nachweis praktischer Handlungskompetenz.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-25",
+      "nr": 25,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "D. Lernerfolg, Transfer und Bewertung",
+      "frage": "Warum verwenden Sie ein zweites Kabel?",
+      "stichworte": [
+        "keine bloße Wiederholung der Demonstration",
+        "neue, vergleichbare Situation",
+        "Selbstständigkeit sichtbar",
+        "Transfer und Diagnosefähigkeit"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was, wenn beide Kabel dasselbe Ergebnis zeigen?",
+      "antwortfalle": "Material vorher testen und eindeutige Fallauswahl vorbereiten.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-26",
+      "nr": 26,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "D. Lernerfolg, Transfer und Bewertung",
+      "frage": "Wie messen Sie „fehlerfrei“?",
+      "stichworte": [
+        "vorab definierte Kriterien",
+        "korrekter Anschluss und Ablauf",
+        "richtige Interpretation",
+        "vollständige Dokumentationsfelder",
+        "Sicherheitsregeln eingehalten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Sind Kriterien dem Azubi bekannt?",
+      "antwortfalle": "Keine geheimen Bewertungsmaßstäbe.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-27",
+      "nr": 27,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "D. Lernerfolg, Transfer und Bewertung",
+      "frage": "Was tun Sie, wenn das Lernziel nicht erreicht wird?",
+      "stichworte": [
+        "Teilkompetenz und Ursache feststellen",
+        "konkretes Feedback",
+        "erneut demonstrieren oder Hilfen anpassen",
+        "zusätzliche Übungszeit außerhalb der Prüfungsszene planen",
+        "Lernziel später erneut kontrollieren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Ist die Unterweisung dann gescheitert?",
+      "antwortfalle": "Nicht beschönigen; pädagogisch nachvollziehbar weiterplanen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-28",
+      "nr": 28,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "D. Lernerfolg, Transfer und Bewertung",
+      "frage": "Wie sichern Sie den Transfer?",
+      "stichworte": [
+        "Störungsanzeige als neue Situation",
+        "Vorgehen begründen lassen",
+        "Einordnung in größere Netzwerkdiagnose",
+        "nächsten Lernauftrag ankündigen",
+        "Prüfroutine als Checkliste verfügbar"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Ist Transfer in 15 Minuten realistisch?",
+      "antwortfalle": "Transfer anbahnen, nicht umfassende Handlungskompetenz behaupten.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-29",
+      "nr": 29,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "D. Lernerfolg, Transfer und Bewertung",
+      "frage": "Wie dokumentieren Sie den Lernstand?",
+      "stichworte": [
+        "Beobachtungsbogen mit Kriterien",
+        "kurze sachliche Notiz",
+        "Ergebnis und Unterstützungsbedarf",
+        "Folgeschritt im Ausbildungsplan",
+        "Datenschutz und Aufbewahrung beachten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Bekommt der Azubi Einblick?",
+      "antwortfalle": "Keine intransparente „Geheimakte“ suggerieren.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-30",
+      "nr": 30,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "E. Arbeitsschutz, Technik und Organisation",
+      "frage": "Welche Sicherheitsaspekte beachten Sie?",
+      "stichworte": [
+        "Hersteller- und Betriebsanweisung",
+        "Tester nur für vorgesehenen Zweck",
+        "nicht an ungeeigneten/aktiven Stromkreisen einsetzen",
+        "Kabel und Gerät vor Nutzung prüfen",
+        "Arbeitsplatz ordentlich halten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Ist ein Patchkabel völlig ungefährlich?",
+      "antwortfalle": "Risiken weder dramatisieren noch pauschal ausschließen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-31",
+      "nr": 31,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "E. Arbeitsschutz, Technik und Organisation",
+      "frage": "Was tun Sie bei Geräteausfall?",
+      "stichworte": [
+        "Ruhe bewahren",
+        "Ersatzgerät/Batterien",
+        "laminierte Anzeigen für kognitive Teile",
+        "Ablauf transparent anpassen",
+        "keine Internetabhängigkeit"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Kann die praktische Kompetenz dann vollständig geprüft werden?",
+      "antwortfalle": "Nicht behaupten, eine Papierkarte ersetze die Gerätehandhabung vollständig.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-32",
+      "nr": 32,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "E. Arbeitsschutz, Technik und Organisation",
+      "frage": "Warum bringen Sie eine Ausfallalternative mit?",
+      "stichworte": [
+        "IHK Nürnberg verlangt Alternative bei Technik-/Internetnutzung",
+        "Prüfungsablauf sichern",
+        "Zeitverlust begrenzen",
+        "Professionalität und Vorbereitung zeigen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Was ist Ihre konkrete Alternative?",
+      "antwortfalle": "„Mein Handy“ ohne vorbereitete Inhalte ist kein belastbarer Plan B.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-33",
+      "nr": 33,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "E. Arbeitsschutz, Technik und Organisation",
+      "frage": "Wie bereiten Sie den Prüfungsraum vor?",
+      "stichworte": [
+        "Material nach Ablauf anordnen",
+        "beide Kabel und Tester vorab prüfen",
+        "Dokumente in drei Exemplaren",
+        "Tisch schützen falls erforderlich",
+        "Aufbau in maximal zehn Minuten allein bewältigen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wer hilft beim Aufbau?",
+      "antwortfalle": "Nach Nürnberger Merkblatt erfolgt der Aufbau allein.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-34",
+      "nr": 34,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "E. Arbeitsschutz, Technik und Organisation",
+      "frage": "Warum verzichten Sie auf Internet?",
+      "stichworte": [
+        "für Lernziel nicht erforderlich",
+        "Ausfall- und Datenschutzrisiko reduzieren",
+        "lokale Materialien genügen",
+        "Fokus auf Handlung statt Technikshow"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wäre Internet erlaubt?",
+      "antwortfalle": "Nicht behaupten, es sei verboten; Nürnberg erlaubt es, verlangt aber eine Alternative.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-35",
+      "nr": 35,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "E. Arbeitsschutz, Technik und Organisation",
+      "frage": "Was beachten Sie beim Datenschutz?",
+      "stichworte": [
+        "keine echten Kundendaten",
+        "neutrale Gerätenamen und Fallnummern",
+        "Dokumentation nur zweckgebunden",
+        "Unterlagen sicher handhaben",
+        "betriebliche Regeln beachten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Darf ein echtes Ticket gezeigt werden?",
+      "antwortfalle": "Nicht ohne Anonymisierung und tragfähige Berechtigung.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-36",
+      "nr": 36,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "F. Recht und Ausbildungspraxis",
+      "frage": "Welche Rechtsgrundlagen sind für Ihre Situation relevant?",
+      "stichworte": [
+        "AEVO: planen, durchführen, kontrollieren",
+        "BBiG: Pflichten und Eignung",
+        "Ausbildungsordnung Fachinformatiker/in",
+        "Arbeitsschutz und betriebliche Anweisungen",
+        "Datenschutz bei Dokumentation"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Nennen Sie nicht nur Gesetze – was folgt konkret daraus?",
+      "antwortfalle": "Paragraphen aufzählen ohne Situationsbezug.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-37",
+      "nr": 37,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "F. Recht und Ausbildungspraxis",
+      "frage": "Welche Pflicht hat der Ausbilder bei Ausbildungsmitteln?",
+      "stichworte": [
+        "erforderliche Ausbildungsmittel kostenlos bereitstellen",
+        "funktionsfähig und geeignet",
+        "sichere Nutzung vermitteln",
+        "Lernzweck statt produktive Ausbeutung",
+        "Material rechtzeitig vorbereiten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Muss der Azubi den Tester kaufen?",
+      "antwortfalle": "Nein, erforderliche Ausbildungsmittel nicht auf den Azubi abwälzen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-38",
+      "nr": 38,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "F. Recht und Ausbildungspraxis",
+      "frage": "Wie berücksichtigen Sie die Fürsorgepflicht?",
+      "stichworte": [
+        "sicherer Arbeitsplatz",
+        "angemessene Anforderungen",
+        "respektvolle Kommunikation",
+        "Überforderung erkennen",
+        "Gesundheit und Persönlichkeit schützen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Wie reagieren Sie auf starke Prüfungsangst?",
+      "antwortfalle": "Nicht diagnostizieren oder bagatellisieren.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-39",
+      "nr": 39,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "F. Recht und Ausbildungspraxis",
+      "frage": "Was wäre bei einem minderjährigen Auszubildenden zusätzlich wichtig?",
+      "stichworte": [
+        "JArbSchG und Aufsicht",
+        "altersgerechte Gefährdungsbeurteilung",
+        "Arbeitszeit/Pausen/Berufsschule",
+        "verständliche Sicherheitsunterweisung",
+        "Dokumentation erforderlicher Unterweisungen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Ändert sich Ihr Feinlernziel automatisch?",
+      "antwortfalle": "Alter allein rechtfertigt keine pauschale Kompetenzabsenkung.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-40",
+      "nr": 40,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "F. Recht und Ausbildungspraxis",
+      "frage": "Wie fördern Sie berufliche Handlungskompetenz?",
+      "stichworte": [
+        "Fachkompetenz durch Prüfroutine",
+        "Methodenkompetenz durch systematische Diagnose",
+        "Selbstkompetenz durch eigenständiges Arbeiten",
+        "Sozial-/Kommunikationskompetenz durch Dokumentation und Übergabe",
+        "Einbettung in vollständigen Serviceprozess"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Reicht eine 15-Minuten-Einheit dafür aus?",
+      "antwortfalle": "Nur einen Beitrag behaupten, keine vollständige Kompetenzentwicklung.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-41",
+      "nr": 41,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "F. Recht und Ausbildungspraxis",
+      "frage": "Was ändern Sie bei einem Auszubildenden mit Unterstützungsbedarf?",
+      "stichworte": [
+        "Barrieren und konkreten Bedarf klären",
+        "Material, Sprache, Tempo oder Bedienhilfen anpassen",
+        "angemessene zusätzliche Zeit im Ausbildungsalltag",
+        "gleiche Kernkompetenz, individueller Lernweg",
+        "ggf. Nachteilsausgleich/Fachstellen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Welche Diagnose stellen Sie?",
+      "antwortfalle": "Ausbilder diagnostiziert keine medizinischen Störungen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-42",
+      "nr": 42,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "G. Kritische Abschlussfragen",
+      "frage": "Was würden Sie nach heutiger Durchführung verbessern?",
+      "stichworte": [
+        "konkrete Beobachtung nennen",
+        "Auswirkung erklären",
+        "realistische Anpassung",
+        "Stärken beibehalten",
+        "Reflexionsfähigkeit zeigen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "War Ihre Planung also falsch?",
+      "antwortfalle": "Nicht defensiv werden; begründete Weiterentwicklung ist professionell.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-43",
+      "nr": 43,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "G. Kritische Abschlussfragen",
+      "frage": "Warum sollte der Prüfungsausschuss Ihre Methode akzeptieren?",
+      "stichworte": [
+        "nicht um Akzeptanz werben",
+        "Entscheidung anhand Lernziel, Zielperson und Rahmen begründen",
+        "Alternative reflektieren",
+        "Durchführungsergebnis auswerten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Ist die Vier-Stufen-Methode immer die beste?",
+      "antwortfalle": "Niemals eine Methode als universell beste darstellen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-44",
+      "nr": 44,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "G. Kritische Abschlussfragen",
+      "frage": "Was war die wichtigste pädagogische Entscheidung?",
+      "stichworte": [
+        "Hilfen schrittweise reduzieren",
+        "Auszubildenden selbst handeln lassen",
+        "Lernerfolg an neuem Kabel prüfen",
+        "Sicherheit als Eingriffsgrenze"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Warum?",
+      "antwortfalle": "Keine rein technische Entscheidung nennen.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-45",
+      "nr": 45,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "G. Kritische Abschlussfragen",
+      "frage": "Wie reagieren Sie, wenn der Ausschuss eine andere Methode vorschlägt?",
+      "stichworte": [
+        "Vorschlag fachlich aufnehmen",
+        "Eignung und Bedingungen abwägen",
+        "Vor- und Nachteile benennen",
+        "eigene Wahl ruhig begründen",
+        "bei besserer Alternative offen zustimmen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Müssen Sie Ihre Wahl verteidigen?",
+      "antwortfalle": "Nicht rechthaberisch argumentieren.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    },
+    {
+      "id": "fg-46",
+      "nr": 46,
+      "bereich": "Fachgespräch zur praktischen Durchführung",
+      "kategorie": "G. Kritische Abschlussfragen",
+      "frage": "Was ist Ihr Plan, wenn Sie nach zwölf Minuten noch in der Übungsphase sind?",
+      "stichworte": [
+        "keine Hektik erzeugen",
+        "gezielte Hilfestellung",
+        "Kern-Lernerfolgskontrolle sichern",
+        "kurzer strukturierter Abschluss",
+        "offen reflektieren, was im Ausbildungsalltag folgt"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "",
+      "nachfrage": "Einfach weitermachen?",
+      "antwortfalle": "15-Minuten-Grenze nicht überschreiten.",
+      "kontext": "Musterunterweisung der praktischen AEVO-Prüfung (IHK Nürnberg): Ausbildungsberuf Fachinformatiker/in – Fachrichtung Systemintegration. Thema: Ein Netzwerk-Patchkabel mit einem Kabeltester prüfen, das Fehlerbild erkennen und das Ergebnis dokumentieren. Zielperson: ein Mitglied des Prüfungsausschusses in der Rolle eines Auszubildenden im 1. Ausbildungsjahr; Vorkenntnisse: Grundbegriffe Netzwerk und RJ45, kennt betriebliche Sicherheits- und Dokumentationsregeln, hat den Tester noch nicht selbstständig eingesetzt. Feinlernziel: Der Auszubildende prüft am Ende der Einheit ein Patchkabel mit dem bereitgestellten Kabeltester nach der betrieblichen Prüfroutine, interpretiert die Anzeige korrekt und dokumentiert das Ergebnis vollständig und fehlerfrei. Methode: modifizierte Vier-Stufen-Methode mit aktivierendem Lehrgespräch und selbstständiger Übungsphase. Lernbereiche: kognitiv (Anzeige deuten), psychomotorisch (Kabel und Tester handhaben), affektiv (sorgfältig, sicher, dokumentationsbewusst arbeiten). Ablauf in 15 Minuten: Einstieg/Praxisproblem, Ziel und Sicherheit, Vormachen und Erklären, angeleitetes Ausführen, selbstständige Übung am zweiten Kabel, Auswertung mit Selbsteinschätzung, Transfer/Abschluss."
+    }
+  ]
+}

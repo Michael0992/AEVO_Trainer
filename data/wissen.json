@@ -1,0 +1,908 @@
+{
+  "titel": "Wissensbereich – allgemeine Ausbildungsthemen",
+  "hinweis": "Eigenständig formulierte Übungsfragen zu den Rechtsgrundlagen der Berufsausbildung. Paragraphenangaben dienen der Orientierung; maßgeblich sind der aktuelle Gesetzestext, der Tarifvertrag und die Auskunft der zuständigen Stelle.",
+  "themen": [
+    {
+      "id": "betriebsrat-jav",
+      "name": "Betriebsrat und JAV",
+      "icon": "🗳",
+      "beschreibung": "Beteiligungsrechte, Jugend- und Auszubildendenvertretung, Zusammenarbeit"
+    },
+    {
+      "id": "vertrag",
+      "name": "Ausbildungsvertrag und Probezeit",
+      "icon": "📄",
+      "beschreibung": "Vertragsinhalte, Eintragung, Probezeit, Kündigung, Streitigkeiten"
+    },
+    {
+      "id": "teilzeit-dauer",
+      "name": "Teilzeit, Verkürzung, Verlängerung",
+      "icon": "⏳",
+      "beschreibung": "Teilzeitberufsausbildung, Anrechnung, vorzeitige Zulassung, Streckung"
+    },
+    {
+      "id": "ordnung-plan",
+      "name": "Ausbildungsordnung und Rahmenplan",
+      "icon": "🧭",
+      "beschreibung": "Ordnungsmittel, Ausbildungsrahmenplan, betrieblicher Plan, Lernorte"
+    },
+    {
+      "id": "rechte-pflichten",
+      "name": "Rechte und Pflichten",
+      "icon": "⚖",
+      "beschreibung": "Pflichten beider Seiten, Ausbildungsnachweis, Fürsorge, Berufsschule"
+    },
+    {
+      "id": "verguetung-urlaub",
+      "name": "Vergütung, Urlaub, Arbeitszeit",
+      "icon": "💶",
+      "beschreibung": "Mindestausbildungsvergütung, Fälligkeit, Fortzahlung, Urlaubsanspruch"
+    },
+    {
+      "id": "jugendschutz",
+      "name": "Jugendarbeitsschutz und Sicherheit",
+      "icon": "🛡",
+      "beschreibung": "JArbSchG, Untersuchungen, Unterweisungen, Gefährdungsbeurteilung"
+    },
+    {
+      "id": "pruefung-abschluss",
+      "name": "Prüfung, Abschluss, Zeugnis",
+      "icon": "🎓",
+      "beschreibung": "Zulassung, Prüfungsausschuss, Nichtbestehen, Ende und Übernahme"
+    }
+  ],
+  "fragen": [
+    {
+      "id": "w-1",
+      "nr": 1,
+      "bereich": "Wissensbereich",
+      "kategorie": "Betriebsrat und JAV",
+      "thema": "betriebsrat-jav",
+      "frage": "Wer darf die Jugend- und Auszubildendenvertretung wählen, und wer ist wählbar?",
+      "stichworte": [
+        "JAV wird in Betrieben mit Betriebsrat und mindestens fünf jugendlichen oder auszubildenden Beschäftigten gewählt",
+        "wahlberechtigt: Beschäftigte unter 18 Jahren sowie Auszubildende unter 25 Jahren",
+        "wählbar: alle Beschäftigten unter 25 Jahren, also auch nicht wahlberechtigte ältere Kolleginnen und Kollegen unter 25",
+        "Betriebsratsmitglieder sind nicht zur JAV wählbar",
+        "Amtszeit zwei Jahre, Rechtsgrundlage Betriebsverfassungsgesetz",
+        "Größe der JAV richtet sich nach der Zahl der Vertretenen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "In einem Betrieb mit 40 Auszubildenden wird eine mehrköpfige JAV gewählt; die 24-jährige Auszubildende kandidiert und wählt mit.",
+      "nachfrage": "Worin unterscheiden sich Wahlberechtigung und Wählbarkeit?",
+      "antwortfalle": "Nicht behaupten, die JAV sei eine eigenständige Arbeitnehmervertretung mit eigenen Mitbestimmungsrechten.",
+      "kontext": ""
+    },
+    {
+      "id": "w-2",
+      "nr": 2,
+      "bereich": "Wissensbereich",
+      "kategorie": "Betriebsrat und JAV",
+      "thema": "betriebsrat-jav",
+      "frage": "Welche Aufgaben hat die JAV, und wie setzt sie ihre Anliegen durch?",
+      "stichworte": [
+        "überwacht die Einhaltung von Gesetzen, Tarifverträgen und Betriebsvereinbarungen zugunsten junger Beschäftigter",
+        "nimmt Anregungen und Beschwerden entgegen und bringt sie über den Betriebsrat ein",
+        "beantragt Maßnahmen beim Betriebsrat, hat aber keine eigenen Mitbestimmungsrechte",
+        "Teilnahme an Betriebsratssitzungen; Stimmrecht, wenn Angelegenheiten überwiegend junge Beschäftigte betreffen",
+        "kann eine Jugend- und Auszubildendenversammlung durchführen",
+        "Förderung der Integration ausländischer und benachteiligter junger Beschäftigter"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Die JAV sammelt Rückmeldungen zur Qualität der Ausbildungsbetreuung und beantragt über den Betriebsrat feste Feedbackgespräche.",
+      "nachfrage": "Wann hat die JAV in der Betriebsratssitzung Stimmrecht?",
+      "antwortfalle": "Die JAV verhandelt keine Betriebsvereinbarungen selbst – das tut der Betriebsrat.",
+      "kontext": ""
+    },
+    {
+      "id": "w-3",
+      "nr": 3,
+      "bereich": "Wissensbereich",
+      "kategorie": "Betriebsrat und JAV",
+      "thema": "betriebsrat-jav",
+      "frage": "Welche Beteiligungsrechte hat der Betriebsrat bei der Einstellung von Auszubildenden?",
+      "stichworte": [
+        "Unterrichtung und Zustimmung vor jeder Einstellung in Betrieben mit mehr als 20 wahlberechtigten Beschäftigten",
+        "vollständige Bewerbungsunterlagen, Auskunft über die Person und die Auswirkungen",
+        "Zustimmungsverweigerung nur aus den gesetzlich genannten Gründen, zum Beispiel Verstoß gegen Gesetz oder Auswahlrichtlinie",
+        "Mitbestimmung bei personellen Auswahlrichtlinien und Beurteilungsgrundsätzen",
+        "Mitbestimmung bei Personalfragebogen und Ausschreibungspflicht im Betrieb",
+        "rechtzeitige Beteiligung einplanen, sonst verzögert sich die Einstellung"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Vor der Zusage an eine Bewerberin legt die Personalabteilung dem Betriebsrat Unterlagen und Auswahlbegründung vor.",
+      "nachfrage": "Was passiert, wenn der Betriebsrat die Zustimmung verweigert?",
+      "antwortfalle": "Der Betriebsrat entscheidet nicht selbst über die Auswahl – er stimmt der Einstellung zu oder verweigert sie begründet.",
+      "kontext": ""
+    },
+    {
+      "id": "w-4",
+      "nr": 4,
+      "bereich": "Wissensbereich",
+      "kategorie": "Betriebsrat und JAV",
+      "thema": "betriebsrat-jav",
+      "frage": "Welche Rechte hat der Betriebsrat bei der betrieblichen Berufsbildung?",
+      "stichworte": [
+        "Förderung der Berufsbildung als allgemeine Aufgabe, Beratung über Bedarf und Maßnahmen",
+        "Mitbestimmung bei der Durchführung betrieblicher Berufsbildungsmaßnahmen",
+        "Mitbestimmung bei der Bestellung von Ausbilderinnen und Ausbildern",
+        "Abberufung verlangen, wenn die persönliche oder fachliche Eignung fehlt oder Aufgaben vernachlässigt werden",
+        "Vorschlagsrecht für Teilnehmende an Bildungsmaßnahmen",
+        "Zusammenarbeit früh und dokumentiert organisieren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Vor Einführung eines neuen Lernmanagementsystems für Auszubildende wird der Betriebsrat beteiligt.",
+      "nachfrage": "Warum ist die Bestellung des Ausbilders mitbestimmungspflichtig?",
+      "antwortfalle": "Nicht alles rund um Ausbildung ist mitbestimmungspflichtig – zwischen Information, Beratung und echter Mitbestimmung unterscheiden.",
+      "kontext": ""
+    },
+    {
+      "id": "w-5",
+      "nr": 5,
+      "bereich": "Wissensbereich",
+      "kategorie": "Betriebsrat und JAV",
+      "thema": "betriebsrat-jav",
+      "frage": "Wie gehen Sie als Ausbilder mit einer Beschwerde um, die ein Auszubildender über die JAV vorbringt?",
+      "stichworte": [
+        "Beschwerde ernst nehmen, Sachverhalt sachlich und ohne Vorverurteilung klären",
+        "Beschwerderecht der Beschäftigten und Rolle der Interessenvertretung respektieren",
+        "kein Nachteil für die beschwerdeführende Person",
+        "Gespräch mit allen Beteiligten, Lösung und Vereinbarung dokumentieren",
+        "Zuständigkeiten trennen: Ausbildung, Personalabteilung, Betriebsrat, zuständige Stelle",
+        "Vertraulichkeit und Datenschutz wahren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Über die JAV wird gemeldet, dass Auszubildende regelmäßig für ausbildungsfremde Lagerarbeiten eingesetzt werden; der Ausbildungsplan wird daraufhin angepasst.",
+      "nachfrage": "Was gilt, wenn sich die Beschwerde als unbegründet erweist?",
+      "antwortfalle": "Beschwerden nicht als Illoyalität behandeln.",
+      "kontext": ""
+    },
+
+    {
+      "id": "w-6",
+      "nr": 6,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsvertrag und Probezeit",
+      "thema": "vertrag",
+      "frage": "Welche Angaben muss die Niederschrift des Berufsausbildungsvertrags mindestens enthalten?",
+      "stichworte": [
+        "Art, sachliche und zeitliche Gliederung sowie Ziel der Berufsausbildung",
+        "Beginn und Dauer der Ausbildung",
+        "Ausbildungsmaßnahmen außerhalb der Ausbildungsstätte",
+        "Dauer der regelmäßigen täglichen Ausbildungszeit",
+        "Dauer der Probezeit",
+        "Zahlung und Höhe der Vergütung, Dauer des Urlaubs",
+        "Voraussetzungen für eine Kündigung, Hinweis auf Tarifverträge und Betriebsvereinbarungen",
+        "Niederschrift unverzüglich nach Vertragsschluss, spätestens vor Ausbildungsbeginn, unterschrieben auch von gesetzlichen Vertretern bei Minderjährigen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Im Mustervertrag fehlt die zeitliche Gliederung; die zuständige Stelle beanstandet ihn vor der Eintragung.",
+      "nachfrage": "Was passiert, wenn eine Pflichtangabe fehlt?",
+      "antwortfalle": "Der Vertrag wird nicht dadurch unwirksam, dass eine Angabe fehlt – aber er ist mangelhaft und wird nicht eingetragen.",
+      "kontext": ""
+    },
+    {
+      "id": "w-7",
+      "nr": 7,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsvertrag und Probezeit",
+      "thema": "vertrag",
+      "frage": "Warum und wie wird der Ausbildungsvertrag bei der zuständigen Stelle eingetragen?",
+      "stichworte": [
+        "Eintragung in das Verzeichnis der Berufsausbildungsverhältnisse bei der zuständigen Stelle, zum Beispiel IHK oder HWK",
+        "Antrag unverzüglich nach Vertragsabschluss durch den Ausbildenden",
+        "Prüfung von Vertragsinhalt, Eignung der Ausbildungsstätte und Eignung des Ausbildungspersonals",
+        "Voraussetzung für die Zulassung zur Abschlussprüfung",
+        "Änderungen des wesentlichen Vertragsinhalts sind nachzumelden",
+        "Überwachung der Ausbildung durch die zuständige Stelle"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Nach einer vereinbarten Verkürzung meldet der Betrieb die geänderte Vertragsdauer der IHK.",
+      "nachfrage": "Welche Folge hat eine fehlende Eintragung für die Prüfung?",
+      "antwortfalle": "Die Eintragung ist keine Formalie, sondern Zulassungsvoraussetzung.",
+      "kontext": ""
+    },
+    {
+      "id": "w-8",
+      "nr": 8,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsvertrag und Probezeit",
+      "thema": "vertrag",
+      "frage": "Wie lange dauert die Probezeit, und welchen Zweck hat sie?",
+      "stichworte": [
+        "mindestens ein Monat, höchstens vier Monate",
+        "beide Seiten prüfen Eignung, Neigung und Passung",
+        "Kündigung in der Probezeit jederzeit ohne Einhaltung einer Frist und ohne Angabe von Gründen, aber schriftlich",
+        "bei längerer Unterbrechung kann sich die Probezeit um die Unterbrechungszeit verlängern",
+        "planmäßige Beobachtung mit Kriterien statt Bauchgefühl",
+        "Feedback mehrfach während der Probezeit, nicht erst am Ende"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Feedbackgespräche nach Woche 2, 6 und 12 mit dokumentierten Beobachtungen.",
+      "nachfrage": "Kann die Probezeit nachträglich verlängert werden?",
+      "antwortfalle": "Nicht behaupten, in der Probezeit gelte gar kein Kündigungsschutz und es brauche keine Schriftform.",
+      "kontext": ""
+    },
+    {
+      "id": "w-9",
+      "nr": 9,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsvertrag und Probezeit",
+      "thema": "vertrag",
+      "frage": "Unter welchen Voraussetzungen kann ein Ausbildungsverhältnis nach der Probezeit gekündigt werden?",
+      "stichworte": [
+        "nach der Probezeit nur aus wichtigem Grund ohne Einhaltung einer Kündigungsfrist",
+        "Auszubildende können zusätzlich mit vierwöchiger Frist kündigen, wenn sie die Ausbildung aufgeben oder in einem anderen Beruf ausgebildet werden wollen",
+        "Kündigung schriftlich und unter Angabe der Kündigungsgründe",
+        "Kündigung aus wichtigem Grund ist unwirksam, wenn die Tatsachen länger als zwei Wochen bekannt sind",
+        "vorher mildere Mittel: Gespräch, Abmahnung, Unterstützungsangebote",
+        "bei Minderjährigen an die gesetzlichen Vertreter richten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Nach wiederholtem unentschuldigtem Fehlen folgen Gespräch, schriftliche Abmahnung und erst danach weitere Schritte.",
+      "nachfrage": "Was ist ein wichtiger Grund?",
+      "antwortfalle": "Schlechte Leistungen allein sind kein wichtiger Grund – hier sind Förderung und Streckung die richtigen Wege.",
+      "kontext": ""
+    },
+    {
+      "id": "w-10",
+      "nr": 10,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsvertrag und Probezeit",
+      "thema": "vertrag",
+      "frage": "Was tun Sie bei Streitigkeiten aus dem Ausbildungsverhältnis?",
+      "stichworte": [
+        "zuerst das klärende Gespräch im Betrieb, Ursachen und Erwartungen offenlegen",
+        "Ausbildungsberater der zuständigen Stelle als Vermittlung einschalten",
+        "Schlichtungsausschuss der zuständigen Stelle anrufen, wo er besteht – vor einer Klage beim Arbeitsgericht",
+        "Betriebsrat und JAV im Rahmen ihrer Zuständigkeit beteiligen",
+        "Sachverhalt, Vereinbarungen und Fristen dokumentieren",
+        "Verhältnismäßigkeit und Fürsorgepflicht wahren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Streit über nicht gewährten Urlaub wird im Schlichtungsausschuss der IHK beigelegt.",
+      "nachfrage": "Wann ist der Weg zum Arbeitsgericht eröffnet?",
+      "antwortfalle": "Nicht sofort eskalieren – Gespräch und Schlichtung kommen zuerst.",
+      "kontext": ""
+    },
+
+    {
+      "id": "w-11",
+      "nr": 11,
+      "bereich": "Wissensbereich",
+      "kategorie": "Teilzeit, Verkürzung, Verlängerung",
+      "thema": "teilzeit-dauer",
+      "frage": "Wie funktioniert die Teilzeitberufsausbildung?",
+      "stichworte": [
+        "Vereinbarung zwischen Ausbildendem und Auszubildendem im Vertrag, kein besonderer Grund mehr erforderlich",
+        "Verkürzung der täglichen oder wöchentlichen Ausbildungszeit um höchstens die Hälfte",
+        "die Ausbildungsdauer verlängert sich entsprechend, höchstens auf das Eineinhalbfache der regulären Dauer",
+        "Berufsschulunterricht bleibt in vollem Umfang zu besuchen",
+        "Zustimmung und Eintragung durch die zuständige Stelle",
+        "Ausbildungsziel und Qualität müssen gesichert bleiben",
+        "Vergütung darf entsprechend der gekürzten Zeit anteilig gezahlt werden"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Eine Auszubildende mit Kind reduziert auf 30 Wochenstunden; Ausbildungsplan und Vertragsdauer werden angepasst.",
+      "nachfrage": "Muss der Berufsschulunterricht ebenfalls reduziert werden?",
+      "antwortfalle": "Teilzeit ist keine Ausbildung zweiter Klasse – das Ausbildungsziel bleibt identisch.",
+      "kontext": ""
+    },
+    {
+      "id": "w-12",
+      "nr": 12,
+      "bereich": "Wissensbereich",
+      "kategorie": "Teilzeit, Verkürzung, Verlängerung",
+      "thema": "teilzeit-dauer",
+      "frage": "Wann kann die Ausbildungszeit verkürzt werden?",
+      "stichworte": [
+        "gemeinsamer Antrag von Ausbildendem und Auszubildendem an die zuständige Stelle",
+        "Voraussetzung: das Ausbildungsziel wird in der kürzeren Zeit voraussichtlich erreicht",
+        "Anrechnung beruflicher Vorbildung, etwa einer einschlägigen Berufsfachschule, nach Landesrecht",
+        "schulische Vorbildung wie mittlerer Abschluss oder Abitur als typischer Verkürzungsgrund",
+        "die zuständige Stelle entscheidet",
+        "Ausbildungsplan, Vertrag und Prüfungstermin anpassen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Ein Abiturient verkürzt von drei auf zweieinhalb Jahre; der betriebliche Ausbildungsplan wird verdichtet.",
+      "nachfrage": "Wer entscheidet über die Verkürzung?",
+      "antwortfalle": "Verkürzung und vorzeitige Zulassung zur Prüfung nicht verwechseln.",
+      "kontext": ""
+    },
+    {
+      "id": "w-13",
+      "nr": 13,
+      "bereich": "Wissensbereich",
+      "kategorie": "Teilzeit, Verkürzung, Verlängerung",
+      "thema": "teilzeit-dauer",
+      "frage": "Wann wird die Ausbildungszeit verlängert?",
+      "stichworte": [
+        "auf Antrag des Auszubildenden, wenn die Verlängerung erforderlich ist, um das Ausbildungsziel zu erreichen",
+        "typische Gründe: längere Krankheit, Leistungsrückstand, besonderer Förderbedarf",
+        "die zuständige Stelle entscheidet und hört den Ausbildenden an",
+        "bei Nichtbestehen der Abschlussprüfung Verlängerung auf Verlangen bis zur nächstmöglichen Wiederholungsprüfung, höchstens um ein Jahr",
+        "Förderplan und zusätzliche Lernangebote begleiten die Verlängerung",
+        "Vertragsänderung eintragen lassen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Nach mehrmonatiger Erkrankung beantragt der Auszubildende eine Verlängerung um ein halbes Jahr.",
+      "nachfrage": "Kann der Betrieb die Verlängerung beantragen?",
+      "antwortfalle": "Verlängerung ist kein Automatismus und keine Sanktion.",
+      "kontext": ""
+    },
+    {
+      "id": "w-14",
+      "nr": 14,
+      "bereich": "Wissensbereich",
+      "kategorie": "Teilzeit, Verkürzung, Verlängerung",
+      "thema": "teilzeit-dauer",
+      "frage": "Was bedeutet die vorzeitige Zulassung zur Abschlussprüfung?",
+      "stichworte": [
+        "Zulassung vor Ablauf der Ausbildungszeit, wenn die Leistungen dies rechtfertigen",
+        "Antrag bei der zuständigen Stelle, in der Regel gemeinsam getragen",
+        "Berufsschulleistungen und betriebliche Leistungen werden herangezogen",
+        "die zuständige Stelle entscheidet",
+        "Ausbildungsverhältnis endet mit Bekanntgabe des Bestehens",
+        "vorher Beratung: Prüfungsreife ehrlich einschätzen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Eine Auszubildende mit durchgehend sehr guten Leistungen wird ein halbes Jahr früher geprüft.",
+      "nachfrage": "Worin unterscheidet sich das von einer Verkürzung?",
+      "antwortfalle": "Nicht allein gute Noten zählen, sondern die vollständige Handlungskompetenz.",
+      "kontext": ""
+    },
+    {
+      "id": "w-15",
+      "nr": 15,
+      "bereich": "Wissensbereich",
+      "kategorie": "Teilzeit, Verkürzung, Verlängerung",
+      "thema": "teilzeit-dauer",
+      "frage": "Wie planen Sie die Ausbildung um, wenn ein Auszubildender lange ausfällt?",
+      "stichworte": [
+        "Ausfallzeiten und noch offene Inhalte des Ausbildungsplans erfassen",
+        "Lernstand gemeinsam feststellen, Prioritäten für prüfungsrelevante Inhalte setzen",
+        "Wiedereinstieg schrittweise gestalten, Belastbarkeit beachten",
+        "betrieblichen Ausbildungsplan neu takten, Lernortkooperation mit der Berufsschule",
+        "Verlängerung prüfen und mit der zuständigen Stelle abstimmen",
+        "Vereinbarungen und Fortschritt dokumentieren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Nach acht Wochen Krankheit werden fehlende Lernstationen in einem Nachholplan mit wöchentlichen Zielen abgearbeitet.",
+      "nachfrage": "Woran erkennen Sie, dass eine Verlängerung nötig ist?",
+      "antwortfalle": "Fehlzeiten nicht einfach überspringen und auf Selbststudium hoffen.",
+      "kontext": ""
+    },
+
+    {
+      "id": "w-16",
+      "nr": 16,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsordnung und Rahmenplan",
+      "thema": "ordnung-plan",
+      "frage": "Was regelt die Ausbildungsordnung, und wer erlässt sie?",
+      "stichworte": [
+        "bundeseinheitliche Rechtsverordnung als Grundlage der betrieblichen Ausbildung",
+        "Mindestinhalt: Bezeichnung des Ausbildungsberufs, Ausbildungsdauer, Ausbildungsberufsbild, Ausbildungsrahmenplan, Prüfungsanforderungen",
+        "erlassen vom zuständigen Bundesministerium im Einvernehmen mit dem Bildungsministerium",
+        "erarbeitet unter Mitwirkung von Sozialpartnern und Bundesinstitut für Berufsbildung",
+        "Ausbildungsdauer in der Regel zwei bis drei Jahre",
+        "betriebliche Besonderheiten sind zulässig, die Mindestinhalte sind verbindlich"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Die Verordnung über die Berufsausbildung der IT-Berufe legt Berufsbild, Dauer und Prüfungsform verbindlich fest.",
+      "nachfrage": "Was ist das Ausbildungsberufsbild?",
+      "antwortfalle": "Die Ausbildungsordnung ist kein Lehrplan der Berufsschule – das ist der Rahmenlehrplan.",
+      "kontext": ""
+    },
+    {
+      "id": "w-17",
+      "nr": 17,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsordnung und Rahmenplan",
+      "thema": "ordnung-plan",
+      "frage": "Wie unterscheiden sich Ausbildungsrahmenplan, betrieblicher Ausbildungsplan und Rahmenlehrplan?",
+      "stichworte": [
+        "Ausbildungsrahmenplan: Teil der Ausbildungsordnung, sachliche und zeitliche Gliederung der zu vermittelnden Fertigkeiten, Kenntnisse und Fähigkeiten",
+        "betrieblicher Ausbildungsplan: Übersetzung des Rahmenplans auf die Prozesse, Abteilungen und Termine des eigenen Betriebs",
+        "Rahmenlehrplan: Grundlage des Berufsschulunterrichts, in Lernfeldern aufgebaut, von der Kultusministerkonferenz abgestimmt",
+        "betrieblicher Plan ist Bestandteil der Vertragsniederschrift",
+        "Abstimmung der Lernorte über gemeinsame Themen und Zeitpunkte",
+        "Plan wird fortgeschrieben, nicht einmalig abgeheftet"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Aus der Berufsbildposition Netzwerktechnik werden konkrete Lernstationen in Support, Rollout und Dokumentation abgeleitet.",
+      "nachfrage": "Wer erstellt den betrieblichen Ausbildungsplan?",
+      "antwortfalle": "Den Ausbildungsrahmenplan nicht einfach abschreiben und als betrieblichen Plan ausgeben.",
+      "kontext": ""
+    },
+    {
+      "id": "w-18",
+      "nr": 18,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsordnung und Rahmenplan",
+      "thema": "ordnung-plan",
+      "frage": "Was sind die Standardberufsbildpositionen, und wie vermitteln Sie sie?",
+      "stichworte": [
+        "verbindliche Mindestanforderungen in allen seit August 2021 neu geordneten Ausbildungsberufen",
+        "vier Bereiche: Organisation des Ausbildungsbetriebs und Berufsbildung, Sicherheit und Gesundheit bei der Arbeit, Umweltschutz und Nachhaltigkeit, digitalisierte Arbeitswelt",
+        "integrativ mit den beruflichen Fachaufgaben vermitteln, nicht als Sonderunterricht",
+        "im betrieblichen Ausbildungsplan sichtbar ausweisen",
+        "handlungsorientiert prüfen und reflektieren",
+        "über die gesamte Ausbildungszeit verteilen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Beim Beschaffungsauftrag werden Datenqualität, Ergonomie und Nachhaltigkeitskriterien mitbearbeitet.",
+      "nachfrage": "Warum integrativ statt als eigener Block?",
+      "antwortfalle": "Nicht behaupten, diese Inhalte seien freiwillige Zusatzthemen.",
+      "kontext": ""
+    },
+    {
+      "id": "w-19",
+      "nr": 19,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsordnung und Rahmenplan",
+      "thema": "ordnung-plan",
+      "frage": "Welche Voraussetzungen muss ein Betrieb erfüllen, um ausbilden zu dürfen?",
+      "stichworte": [
+        "Eignung der Ausbildungsstätte nach Art und Einrichtung passend zum Ausbildungsberuf",
+        "angemessenes Verhältnis von Fachkräften zu Auszubildenden",
+        "persönlich geeigneter Ausbildender und persönlich sowie fachlich geeigneter Ausbilder",
+        "fachliche Eignung: berufliche Fertigkeiten, Kenntnisse und Fähigkeiten sowie berufs- und arbeitspädagogische Eignung",
+        "fehlende Inhalte über Verbundausbildung oder überbetriebliche Maßnahmen abdecken",
+        "Überwachung durch die zuständige Stelle"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Eine kleine Agentur vermittelt die Buchhaltungsinhalte über einen Verbundpartner.",
+      "nachfrage": "Worin unterscheiden sich persönliche und fachliche Eignung?",
+      "antwortfalle": "Der AEVO-Nachweis allein ersetzt nicht die berufliche Fachqualifikation.",
+      "kontext": ""
+    },
+    {
+      "id": "w-20",
+      "nr": 20,
+      "bereich": "Wissensbereich",
+      "kategorie": "Ausbildungsordnung und Rahmenplan",
+      "thema": "ordnung-plan",
+      "frage": "Wie organisieren Sie die Zusammenarbeit mit der Berufsschule?",
+      "stichworte": [
+        "feste Ansprechpersonen auf beiden Seiten benennen",
+        "Ausbildungsrahmenplan und Lernfelder des Rahmenlehrplans abgleichen",
+        "Termine, Lernstände und Förderbedarf regelmäßig abstimmen",
+        "Zeugnisse und Rückmeldungen im Entwicklungsgespräch nutzen",
+        "Datenschutz beachten, Austausch personenbezogener Daten nur auf tragfähiger Grundlage",
+        "dokumentierte, wiederkehrende Austauschformate statt Zufallskontakt"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Ein Quartalsgespräch zwischen Ausbildungsleitung und Klassenleitung zu Projektkompetenzen.",
+      "nachfrage": "Welche Daten dürfen Sie mit der Schule austauschen?",
+      "antwortfalle": "Lernortkooperation ist mehr als das Abzeichnen von Berichtsheften.",
+      "kontext": ""
+    },
+
+    {
+      "id": "w-21",
+      "nr": 21,
+      "bereich": "Wissensbereich",
+      "kategorie": "Rechte und Pflichten",
+      "thema": "rechte-pflichten",
+      "frage": "Welche Pflichten hat der Ausbildende gegenüber dem Auszubildenden?",
+      "stichworte": [
+        "die Fertigkeiten, Kenntnisse und Fähigkeiten vermitteln, die zum Ausbildungsziel erforderlich sind",
+        "selbst ausbilden oder einen geeigneten Ausbilder ausdrücklich damit beauftragen",
+        "Ausbildungsmittel, Werkzeuge und Materialien kostenlos zur Verfügung stellen, auch für die Prüfung",
+        "zum Besuch der Berufsschule anhalten und dafür freistellen",
+        "charakterliche Förderung, Schutz vor sittlicher und körperlicher Gefährdung",
+        "nur Aufgaben übertragen, die dem Ausbildungszweck dienen und den Kräften angemessen sind",
+        "das Führen des Ausbildungsnachweises ermöglichen und ihn regelmäßig durchsehen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Der Betrieb stellt den Taschenrechner und die Fachliteratur für die Prüfung, ohne Kosten für den Auszubildenden.",
+      "nachfrage": "Dürfen Auszubildende Routinearbeiten übernehmen?",
+      "antwortfalle": "Erforderliche Ausbildungsmittel nicht auf den Auszubildenden abwälzen.",
+      "kontext": ""
+    },
+    {
+      "id": "w-22",
+      "nr": 22,
+      "bereich": "Wissensbereich",
+      "kategorie": "Rechte und Pflichten",
+      "thema": "rechte-pflichten",
+      "frage": "Welche Pflichten hat der Auszubildende?",
+      "stichworte": [
+        "sich bemühen, die berufliche Handlungsfähigkeit zu erwerben – die Lernpflicht",
+        "aufgetragene Aufgaben sorgfältig ausführen und Weisungen weisungsbefugter Personen folgen",
+        "Betriebsordnung und Regeln des Arbeitsschutzes beachten",
+        "Werkzeuge, Maschinen und sonstige Einrichtungen pfleglich behandeln",
+        "Betriebs- und Geschäftsgeheimnisse wahren",
+        "Berufsschule besuchen und den Ausbildungsnachweis führen",
+        "Fernbleiben unverzüglich mitteilen, Krankmeldung nach betrieblicher Regelung"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Der Auszubildende meldet sich am ersten Krankheitstag vor Arbeitsbeginn telefonisch beim Ausbilder.",
+      "nachfrage": "Wem gegenüber besteht die Weisungsgebundenheit?",
+      "antwortfalle": "Nicht alle Weisungen sind zulässig – ausbildungsfremde Aufträge sind es nicht.",
+      "kontext": ""
+    },
+    {
+      "id": "w-23",
+      "nr": 23,
+      "bereich": "Wissensbereich",
+      "kategorie": "Rechte und Pflichten",
+      "thema": "rechte-pflichten",
+      "frage": "Welche Funktion hat der Ausbildungsnachweis, und wie setzen Sie ihn ein?",
+      "stichworte": [
+        "Nachweis über den Verlauf der Ausbildung und Zulassungsvoraussetzung für die Abschlussprüfung",
+        "schriftlich oder elektronisch zu führen, Zeit dafür während der Ausbildungszeit geben",
+        "regelmäßige Durchsicht und Abzeichnung durch den Ausbilder",
+        "als Lerninstrument nutzen: Reflexion über Tätigkeiten, Lernerfolge und offene Fragen",
+        "Grundlage für Feedback- und Entwicklungsgespräche",
+        "Datenschutz beachten, keine personenbezogenen Kundendaten eintragen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Im Wochengespräch wird der Eintrag zum Störungsfall gemeinsam ausgewertet und daraus der nächste Lernauftrag abgeleitet.",
+      "nachfrage": "Was gilt, wenn der Nachweis lückenhaft ist?",
+      "antwortfalle": "Das Berichtsheft ist keine reine Formalie kurz vor der Prüfung.",
+      "kontext": ""
+    },
+    {
+      "id": "w-24",
+      "nr": 24,
+      "bereich": "Wissensbereich",
+      "kategorie": "Rechte und Pflichten",
+      "thema": "rechte-pflichten",
+      "frage": "Wie erfüllen Sie die Fürsorgepflicht gegenüber Auszubildenden?",
+      "stichworte": [
+        "sicherer, gesundheitsgerechter Arbeitsplatz und altersgerechte Aufgaben",
+        "Schutz vor Überforderung, Mobbing, Diskriminierung und Belästigung",
+        "angemessene Anforderungen und respektvolle Kommunikation",
+        "Überforderungssignale erkennen und ansprechen, ohne zu diagnostizieren",
+        "Beratungsangebote und Vertrauenspersonen benennen, betriebliche Notfallwege kennen",
+        "Grenzen der Ausbilderrolle wahren, Datenschutz beachten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Bei auffälliger Erschöpfung sucht der Ausbilder das vertrauliche Gespräch und vermittelt mit Zustimmung an die Beratungsstelle.",
+      "nachfrage": "Wie reagieren Sie auf starke Prüfungsangst?",
+      "antwortfalle": "Weder diagnostizieren noch bagatellisieren.",
+      "kontext": ""
+    },
+    {
+      "id": "w-25",
+      "nr": 25,
+      "bereich": "Wissensbereich",
+      "kategorie": "Rechte und Pflichten",
+      "thema": "rechte-pflichten",
+      "frage": "Was ist beim Datenschutz in der Ausbildung zu beachten?",
+      "stichworte": [
+        "nur die für die Ausbildung erforderlichen personenbezogenen Daten verarbeiten",
+        "Zweckbindung, Speicherdauer und Löschung festlegen",
+        "Beurteilungen und Gesundheitsdaten besonders schützen, Zugriff nur für Berechtigte",
+        "Bild- und Tonaufnahmen nur mit tragfähiger Rechtsgrundlage",
+        "in Lernaufgaben und digitalen Tools nur anonymisierte oder Schulungsdaten verwenden",
+        "betriebliche IT- und KI-Richtlinien beachten, Datenschutzbeauftragte einbeziehen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Für eine Übung zur Ticketbearbeitung werden Kundendaten durch neutrale Fallnummern ersetzt.",
+      "nachfrage": "Dürfen Sie Beurteilungen an die Berufsschule weitergeben?",
+      "antwortfalle": "Einwilligung ist nicht immer die passende Rechtsgrundlage und im Über-Unterordnungsverhältnis heikel.",
+      "kontext": ""
+    },
+
+    {
+      "id": "w-26",
+      "nr": 26,
+      "bereich": "Wissensbereich",
+      "kategorie": "Vergütung, Urlaub, Arbeitszeit",
+      "thema": "verguetung-urlaub",
+      "frage": "Was gilt für die Höhe der Ausbildungsvergütung?",
+      "stichworte": [
+        "angemessene Vergütung, die mit fortschreitender Ausbildung mindestens jährlich ansteigt",
+        "gesetzliche Mindestausbildungsvergütung als Untergrenze für Verträge ohne Tarifbindung",
+        "bei Ausbildungsbeginn 2026: 724 Euro im ersten Jahr, 854 im zweiten, 977 im dritten, 1.014 Euro im vierten Jahr",
+        "maßgeblich ist das Jahr des Ausbildungsbeginns, nicht das laufende Kalenderjahr",
+        "gilt ein einschlägiger Tarifvertrag, hat dieser Vorrang – auch wenn er niedriger liegt",
+        "Teilzeitausbildung: anteilige Kürzung zulässig"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Ein Vertrag beginnt am 1. September 2026; vor den Mindestwerten wird der einschlägige Tarifvertrag geprüft.",
+      "nachfrage": "Was bedeutet angemessen, wenn kein Tarifvertrag gilt?",
+      "antwortfalle": "Die Beträge gelten nicht rückwirkend für früher begonnene Verträge.",
+      "kontext": ""
+    },
+    {
+      "id": "w-27",
+      "nr": 27,
+      "bereich": "Wissensbereich",
+      "kategorie": "Vergütung, Urlaub, Arbeitszeit",
+      "thema": "verguetung-urlaub",
+      "frage": "Wann ist die Vergütung fällig, und wann wird sie fortgezahlt?",
+      "stichworte": [
+        "Zahlung spätestens am letzten Arbeitstag des Monats",
+        "Fortzahlung für die Zeit der Freistellung, etwa Berufsschule und Prüfungen",
+        "Fortzahlung bei unverschuldeter Verhinderung, insbesondere Krankheit, bis zu sechs Wochen",
+        "auch für Zeiten, in denen der Betrieb die Ausbildung nicht durchführen kann",
+        "Sachleistungen können angerechnet werden, in Grenzen",
+        "Überstunden von Auszubildenden sind besonders zu vergüten oder auszugleichen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Am Berufsschultag und am Prüfungstag wird die Vergütung ungekürzt weitergezahlt.",
+      "nachfrage": "Sind Überstunden bei Auszubildenden überhaupt zulässig?",
+      "antwortfalle": "Berufsschulzeit ist keine Freizeit und wird nicht abgezogen.",
+      "kontext": ""
+    },
+    {
+      "id": "w-28",
+      "nr": 28,
+      "bereich": "Wissensbereich",
+      "kategorie": "Vergütung, Urlaub, Arbeitszeit",
+      "thema": "verguetung-urlaub",
+      "frage": "Wie hoch ist der Urlaubsanspruch von Auszubildenden?",
+      "stichworte": [
+        "für Volljährige gilt das Bundesurlaubsgesetz mit mindestens 24 Werktagen bei Sechstagewoche, also 20 Arbeitstagen bei Fünftagewoche",
+        "für Minderjährige gilt das Jugendarbeitsschutzgesetz mit gestaffeltem, höherem Anspruch nach Alter zu Beginn des Kalenderjahres",
+        "Tarifvertrag oder Betriebsvereinbarung können mehr vorsehen",
+        "Urlaub soll in der berufsschulfreien Zeit gewährt werden",
+        "Urlaubsplanung frühzeitig mit Berufsschule und Prüfungsterminen abstimmen",
+        "Resturlaub vor Ende der Ausbildung klären"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Die Ferienzeiten der Berufsschule werden bei der Urlaubsplanung des ersten Ausbildungsjahres zugrunde gelegt.",
+      "nachfrage": "Welches Alter ist für die Staffelung maßgeblich?",
+      "antwortfalle": "Urlaub nicht in die Berufsschulzeit legen.",
+      "kontext": ""
+    },
+    {
+      "id": "w-29",
+      "nr": 29,
+      "bereich": "Wissensbereich",
+      "kategorie": "Vergütung, Urlaub, Arbeitszeit",
+      "thema": "verguetung-urlaub",
+      "frage": "Wie ist die Freistellung für den Berufsschulunterricht geregelt?",
+      "stichworte": [
+        "Freistellung für Berufsschulunterricht, Prüfungen und außerbetriebliche Ausbildungsmaßnahmen",
+        "keine Beschäftigung vor einem Unterricht, der vor neun Uhr beginnt",
+        "an einem Berufsschultag mit mehr als fünf Unterrichtsstunden einmal in der Woche keine Beschäftigung im Anschluss",
+        "Berufsschulzeiten werden auf die Ausbildungszeit angerechnet, einschließlich Pausen und Wegezeiten nach Maßgabe der Regelung",
+        "Blockunterrichtswochen werden entsprechend angerechnet",
+        "diese Regeln gelten auch für volljährige Auszubildende"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Nach einem Berufsschultag mit sechs Unterrichtsstunden kehrt die Auszubildende nicht mehr in den Betrieb zurück.",
+      "nachfrage": "Gilt das auch für über 18-Jährige?",
+      "antwortfalle": "Nicht behaupten, nach der Schule sei grundsätzlich noch Arbeit im Betrieb möglich.",
+      "kontext": ""
+    },
+    {
+      "id": "w-30",
+      "nr": 30,
+      "bereich": "Wissensbereich",
+      "kategorie": "Vergütung, Urlaub, Arbeitszeit",
+      "thema": "verguetung-urlaub",
+      "frage": "Welche Kosten der Ausbildung trägt der Betrieb?",
+      "stichworte": [
+        "alle erforderlichen Ausbildungsmittel einschließlich Werkzeug, Material und Fachliteratur",
+        "Prüfungsgebühren der zuständigen Stelle und Ausbildungsmittel für die Prüfung",
+        "persönliche Schutzausrüstung",
+        "überbetriebliche Lehrgänge und Verbundmaßnahmen, soweit sie zur Ausbildung gehören",
+        "Freistellung mit Fortzahlung für Schule und Prüfung",
+        "Reisekosten nach betrieblicher oder tariflicher Regelung"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Die Sicherheitsschuhe und das Fachbuch für die Prüfungsvorbereitung stellt der Betrieb.",
+      "nachfrage": "Wer zahlt Lernmittel der Berufsschule?",
+      "antwortfalle": "Kosten für erforderliche Ausbildungsmittel nicht dem Auszubildenden auferlegen.",
+      "kontext": ""
+    },
+
+    {
+      "id": "w-31",
+      "nr": 31,
+      "bereich": "Wissensbereich",
+      "kategorie": "Jugendarbeitsschutz und Sicherheit",
+      "thema": "jugendschutz",
+      "frage": "Welche Arbeitszeitregeln gelten für minderjährige Auszubildende?",
+      "stichworte": [
+        "höchstens acht Stunden täglich und 40 Stunden wöchentlich",
+        "Fünftagewoche, Samstag und Sonntag grundsätzlich frei mit branchenbezogenen Ausnahmen und Ersatzruhetag",
+        "Ruhepausen: 30 Minuten bei mehr als viereinhalb bis sechs Stunden, 60 Minuten bei mehr als sechs Stunden",
+        "Nachtruhe grundsätzlich von 20 bis 6 Uhr, mit Ausnahmen für bestimmte Branchen",
+        "ununterbrochene Freizeit von mindestens zwölf Stunden nach Arbeitsende",
+        "Mehrarbeit nur ausnahmsweise und mit Freizeitausgleich"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Die 17-jährige Auszubildende beendet ihren Arbeitstag spätestens um 20 Uhr und beginnt frühestens um 6 Uhr.",
+      "nachfrage": "Was ändert sich mit Vollendung des 18. Lebensjahres?",
+      "antwortfalle": "Das Jugendarbeitsschutzgesetz endet nicht am Ausbildungsvertrag, sondern richtet sich nach dem Alter.",
+      "kontext": ""
+    },
+    {
+      "id": "w-32",
+      "nr": 32,
+      "bereich": "Wissensbereich",
+      "kategorie": "Jugendarbeitsschutz und Sicherheit",
+      "thema": "jugendschutz",
+      "frage": "Welche ärztlichen Untersuchungen sind bei Jugendlichen vorgeschrieben?",
+      "stichworte": [
+        "Erstuntersuchung vor Beginn der Beschäftigung, Bescheinigung liegt dem Betrieb vor",
+        "Nachuntersuchung nach einem Jahr der Beschäftigung, Nachweis rechtzeitig einfordern",
+        "ohne gültige Bescheinigung darf nicht beschäftigt werden",
+        "Kosten und Freistellung für die Untersuchung sind geregelt",
+        "Bescheinigungen sind vertraulich aufzubewahren, Gesundheitsdaten besonders schützen",
+        "ärztliche Hinweise in die Gefährdungsbeurteilung und Einsatzplanung übernehmen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Vor Ausbildungsbeginn legt der Jugendliche die Bescheinigung der Erstuntersuchung vor; der Termin für die Nachuntersuchung wird terminiert.",
+      "nachfrage": "Was tun Sie, wenn die Nachuntersuchung fehlt?",
+      "antwortfalle": "Die Untersuchungsbescheinigung ist kein Attest über die Berufseignung.",
+      "kontext": ""
+    },
+    {
+      "id": "w-33",
+      "nr": 33,
+      "bereich": "Wissensbereich",
+      "kategorie": "Jugendarbeitsschutz und Sicherheit",
+      "thema": "jugendschutz",
+      "frage": "Wie führen Sie eine Sicherheitsunterweisung durch?",
+      "stichworte": [
+        "vor Aufnahme der Tätigkeit, bei Veränderungen und danach regelmäßig, mindestens jährlich",
+        "für Jugendliche in kürzeren Abständen, in der Regel halbjährlich",
+        "Inhalte aus der Gefährdungsbeurteilung des konkreten Arbeitsplatzes ableiten",
+        "verständliche Sprache, Demonstration und Rückfrage statt Unterschrift unter ein Formblatt",
+        "Verständnis kontrollieren, zum Beispiel durch Vormachen und Nachmachen",
+        "Unterweisung mit Datum, Inhalt und Teilnehmenden dokumentieren"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Vor dem ersten Einsatz an der Maschine wird die Not-Aus-Funktion gezeigt, erklärt und vom Auszubildenden vorgeführt.",
+      "nachfrage": "Woran erkennen Sie, dass die Unterweisung verstanden wurde?",
+      "antwortfalle": "Die Unterschrift auf der Liste ist kein Nachweis für Verständnis.",
+      "kontext": ""
+    },
+    {
+      "id": "w-34",
+      "nr": 34,
+      "bereich": "Wissensbereich",
+      "kategorie": "Jugendarbeitsschutz und Sicherheit",
+      "thema": "jugendschutz",
+      "frage": "Welche Beschäftigungsbeschränkungen gelten für Jugendliche?",
+      "stichworte": [
+        "keine gefährlichen Arbeiten, die die Leistungsfähigkeit übersteigen oder sittlich gefährden",
+        "Ausnahme, soweit dies zum Erreichen des Ausbildungsziels erforderlich ist und Aufsicht durch eine fachkundige Person sichergestellt ist",
+        "Beschränkungen bei Akkord, Hitze, Kälte, Lärm, Strahlung und Gefahrstoffen",
+        "Gefährdungsbeurteilung speziell für jugendliche Beschäftigte",
+        "Aufsicht, Einweisung und geeignete Schutzausrüstung",
+        "im Zweifel Fachkraft für Arbeitssicherheit und Betriebsarzt einbeziehen"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Arbeiten mit einem Gefahrstoff werden nur unter Aufsicht der Fachkraft und nach besonderer Unterweisung durchgeführt.",
+      "nachfrage": "Wie ist die Aufsicht konkret zu organisieren?",
+      "antwortfalle": "Nicht pauschal behaupten, Jugendliche dürften solche Arbeiten nie ausführen.",
+      "kontext": ""
+    },
+    {
+      "id": "w-35",
+      "nr": 35,
+      "bereich": "Wissensbereich",
+      "kategorie": "Jugendarbeitsschutz und Sicherheit",
+      "thema": "jugendschutz",
+      "frage": "Was tun Sie nach einem Arbeitsunfall eines Auszubildenden?",
+      "stichworte": [
+        "Erste Hilfe leisten, Gefahrenstelle sichern, weitere Gefährdung ausschließen",
+        "Durchgangsarzt aufsuchen lassen, wenn erforderlich",
+        "Eintrag ins Verbandbuch, meldepflichtige Unfälle an die Berufsgenossenschaft melden",
+        "gesetzliche Vertreter bei Minderjährigen informieren",
+        "Ursachen analysieren und Gefährdungsbeurteilung überprüfen",
+        "Maßnahmen ableiten, erneut unterweisen und den Vorfall pädagogisch nachbereiten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Nach einer Schnittverletzung wird die Arbeitsanweisung ergänzt und die Unterweisung für alle wiederholt.",
+      "nachfrage": "Ab wann ist ein Unfall meldepflichtig?",
+      "antwortfalle": "Nicht nach Schuld suchen, sondern nach Ursachen.",
+      "kontext": ""
+    },
+
+    {
+      "id": "w-36",
+      "nr": 36,
+      "bereich": "Wissensbereich",
+      "kategorie": "Prüfung, Abschluss, Zeugnis",
+      "thema": "pruefung-abschluss",
+      "frage": "Welche Voraussetzungen gelten für die Zulassung zur Abschlussprüfung?",
+      "stichworte": [
+        "die Ausbildungszeit ist zurückgelegt oder endet spätestens kurz nach dem Prüfungstermin",
+        "Teilnahme an vorgeschriebenen Zwischenprüfungen beziehungsweise an Teil 1 der gestreckten Abschlussprüfung",
+        "Ausbildungsnachweise sind geführt und vorgelegt",
+        "das Ausbildungsverhältnis ist in das Verzeichnis der zuständigen Stelle eingetragen",
+        "Anmeldung durch den Ausbildenden unter Beachtung der Fristen",
+        "Sonderwege: vorzeitige Zulassung bei guten Leistungen, Zulassung für Externe bei ausreichender Berufspraxis"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Fehlende Berichtshefte werden acht Wochen vor der Anmeldung nachgearbeitet.",
+      "nachfrage": "Wer meldet an, und was passiert bei Fristversäumnis?",
+      "antwortfalle": "Die Teilnahme an der Zwischenprüfung zählt, das Ergebnis ist keine Hürde für die Zulassung.",
+      "kontext": ""
+    },
+    {
+      "id": "w-37",
+      "nr": 37,
+      "bereich": "Wissensbereich",
+      "kategorie": "Prüfung, Abschluss, Zeugnis",
+      "thema": "pruefung-abschluss",
+      "frage": "Wie ist der Prüfungsausschuss zusammengesetzt?",
+      "stichworte": [
+        "von der zuständigen Stelle errichtet, mindestens drei Mitglieder",
+        "Beauftragte der Arbeitgeber und der Arbeitnehmer in gleicher Zahl sowie mindestens eine Lehrkraft einer berufsbildenden Schule",
+        "Mitglieder müssen für die Prüfungsgebiete sachkundig und für die Mitwirkung geeignet sein",
+        "ehrenamtliche Tätigkeit, Unabhängigkeit und Verschwiegenheit",
+        "Befangenheit anzeigen, etwa bei eigenen Auszubildenden",
+        "Beschlüsse mit Stimmenmehrheit, Bewertung nach der Prüfungsordnung"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Die eigene Auszubildende wird von einem anderen Ausschuss geprüft, um Befangenheit zu vermeiden.",
+      "nachfrage": "Warum die paritätische Besetzung?",
+      "antwortfalle": "Der Prüfungsausschuss ist kein Gremium des Betriebs.",
+      "kontext": ""
+    },
+    {
+      "id": "w-38",
+      "nr": 38,
+      "bereich": "Wissensbereich",
+      "kategorie": "Prüfung, Abschluss, Zeugnis",
+      "thema": "pruefung-abschluss",
+      "frage": "Was passiert, wenn die Abschlussprüfung nicht bestanden wird?",
+      "stichworte": [
+        "die Prüfung kann zweimal wiederholt werden",
+        "auf Verlangen des Auszubildenden verlängert sich das Ausbildungsverhältnis bis zur nächstmöglichen Wiederholungsprüfung, höchstens um ein Jahr",
+        "bestandene Prüfungsteile können unter den Bedingungen der Prüfungsordnung angerechnet werden",
+        "Ergebnis gemeinsam analysieren und einen konkreten Förderplan vereinbaren",
+        "Berufsschule und zuständige Stelle einbeziehen",
+        "Gespräch sachlich führen, Perspektive und Motivation erhalten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Nach nicht bestandenem praktischen Teil werden gezielte Übungsaufträge und ein Probe-Fachgespräch vereinbart.",
+      "nachfrage": "Verlängert sich der Vertrag automatisch?",
+      "antwortfalle": "Die Verlängerung tritt nicht von selbst ein – sie setzt das Verlangen des Auszubildenden voraus.",
+      "kontext": ""
+    },
+    {
+      "id": "w-39",
+      "nr": 39,
+      "bereich": "Wissensbereich",
+      "kategorie": "Prüfung, Abschluss, Zeugnis",
+      "thema": "pruefung-abschluss",
+      "frage": "Wann endet das Ausbildungsverhältnis, und was gilt bei Weiterbeschäftigung?",
+      "stichworte": [
+        "regulär mit Ablauf der im Vertrag vereinbarten Ausbildungszeit",
+        "bei Bestehen vor Ablauf: mit Bekanntgabe des Ergebnisses durch den Prüfungsausschuss",
+        "wird der Auszubildende danach weiterbeschäftigt, ohne dass etwas vereinbart wurde, entsteht ein unbefristetes Arbeitsverhältnis",
+        "Übernahme rechtzeitig entscheiden und schriftlich in einem Arbeitsvertrag regeln",
+        "Resturlaub, Zeugnisse und Arbeitsmittel klären",
+        "Rollenwechsel vom Lernenden zur Fachkraft aktiv begleiten"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Zwei Monate vor Prüfungsende erhält die Auszubildende ein Übernahmeangebot mit Eingruppierung und Aufgabenprofil.",
+      "nachfrage": "Was passiert bei stillschweigender Weiterarbeit?",
+      "antwortfalle": "Die Ausbildung endet nicht automatisch mit dem letzten Prüfungstag, sondern mit der Bekanntgabe des Ergebnisses.",
+      "kontext": ""
+    },
+    {
+      "id": "w-40",
+      "nr": 40,
+      "bereich": "Wissensbereich",
+      "kategorie": "Prüfung, Abschluss, Zeugnis",
+      "thema": "pruefung-abschluss",
+      "frage": "Welche Zeugnisse erhält ein Auszubildender zum Ende der Ausbildung?",
+      "stichworte": [
+        "betriebliches Ausbildungszeugnis vom Ausbildenden bei Beendigung, schriftlich",
+        "einfaches Zeugnis mit Angaben zu Art, Dauer und Ziel der Ausbildung sowie den erworbenen Fertigkeiten, Kenntnissen und Fähigkeiten",
+        "auf Verlangen qualifiziertes Zeugnis mit Angaben zu Verhalten und Leistung",
+        "Grundsatz: wahr, klar und wohlwollend, keine verschlüsselten Formulierungen",
+        "zusätzlich Prüfungszeugnis der zuständigen Stelle und Abschlusszeugnis der Berufsschule",
+        "rechtzeitig ausstellen, damit Bewerbungen möglich sind"
+      ],
+      "unterrichtsimpuls": "",
+      "beispiel": "Das qualifizierte Zeugnis beschreibt konkrete Arbeitsqualität und Selbstständigkeit statt Codeformulierungen.",
+      "nachfrage": "Wer unterschreibt das betriebliche Zeugnis?",
+      "antwortfalle": "Das Prüfungszeugnis der Kammer ersetzt nicht das betriebliche Zeugnis.",
+      "kontext": ""
+    }
+  ]
+}

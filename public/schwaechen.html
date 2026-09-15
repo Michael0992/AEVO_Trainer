@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Schwachstellen – AEVO Trainer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1014'/%3E%3Cpath d='M9 22 16 9l7 13' stroke='%23ffb224' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <main class="seite">
+      <div class="seite-kopf">
+        <div>
+          <h2>Wo es noch hakt</h2>
+          <p>Ausgewertet wird jeweils der letzte Versuch je Frage. Unter 6 Punkten gilt als Übungsbedarf, ab 8 Punkten als prüfungssicher.</p>
+        </div>
+        <button class="btn primary" id="btnUeben" type="button">Schwache Fragen üben →</button>
+      </div>
+
+      <div class="kachel-reihe" id="kacheln"></div>
+
+      <article class="card">
+        <div class="chart-kopf">
+          <h3>Themen nach Punkteschnitt</h3>
+          <span class="hint">Klick öffnet die Kategorie im Quiz</span>
+        </div>
+        <div class="rangliste" id="kategorien"></div>
+      </article>
+
+      <article class="card">
+        <div class="chart-kopf">
+          <h3>Einzelne Fragen unter 6 Punkten</h3>
+          <span class="hint" id="schwachAnzahl"></span>
+        </div>
+        <div class="rangliste" id="schwacheFragen"></div>
+      </article>
+
+      <article class="card">
+        <div class="chart-kopf">
+          <h3>Noch nie beantwortet</h3>
+          <span class="hint" id="offenAnzahl"></span>
+        </div>
+        <div class="rangliste" id="offeneFragen"></div>
+        <button class="btn ghost" id="btnMehrOffen" type="button" hidden style="margin-top: 12px">Alle anzeigen</button>
+      </article>
+    </main>
+
+    <script type="module" src="schwaechen.js"></script>
+  </body>
+</html>

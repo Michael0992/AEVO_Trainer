@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wissensbereich – AEVO Trainer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1014'/%3E%3Cpath d='M9 22 16 9l7 13' stroke='%23ffb224' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <main class="seite">
+      <div class="seite-kopf">
+        <div>
+          <h2>Wissensbereich</h2>
+          <p>Allgemeine Themen der Berufsausbildung: Übungsfragen je Thema beantworten und bewerten lassen – oder unten frei nachfragen.</p>
+        </div>
+      </div>
+
+      <div class="themen-grid" id="themen"></div>
+
+      <article class="card" id="uebungKarte" hidden>
+        <div class="card-head">
+          <div>
+            <span class="chip" id="uThema">–</span>
+            <span class="chip chip-muted" id="uNummer">–</span>
+          </div>
+          <div class="btn-row">
+            <button class="btn ghost" id="btnVoriges" type="button">‹ Zurück</button>
+            <button class="btn ghost" id="btnNaechstes" type="button">Weiter ›</button>
+          </div>
+        </div>
+
+        <h2 id="uFrage">–</h2>
+
+        <div class="answer-block">
+          <div class="answer-head">
+            <label for="uAntwort">Deine Antwort</label>
+            <div class="answer-tools">
+              <span class="hint" id="uMicHint"></span>
+              <button id="uBtnMic" class="btn mic" type="button"><span>🎙</span><span id="uMicLabel">Diktieren</span></button>
+            </div>
+          </div>
+          <textarea id="uAntwort" rows="7" placeholder="Antworte frei – oder diktiere über das Mikrofon."></textarea>
+          <div class="answer-foot">
+            <span id="uWoerter">0 Wörter</span>
+            <div class="btn-row">
+              <button class="btn ghost" id="uBtnMuster" type="button">Musterantwort</button>
+              <button class="btn primary" id="uBtnEval" type="button">Antwort bewerten</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="error" id="uFehler" hidden></p>
+
+        <div id="uErgebnis" hidden style="margin-top: 20px">
+          <div class="result-head">
+            <div class="points"><strong id="uPunkte">0</strong><span>/ 10 Punkte</span></div>
+            <div class="bars" id="uBars"></div>
+          </div>
+          <div class="answer-foot" style="margin-top: 12px">
+            <span id="uMeta"></span>
+            <div class="btn-row">
+              <button class="btn sprechen" id="uBtnVorlesen" type="button">🔊 Feedback vorlesen</button>
+            </div>
+          </div>
+          <p class="verdict" id="uUrteil"></p>
+          <div class="result-grid">
+            <div class="res-col good"><h3>Getroffen</h3><ul id="uGood"></ul></div>
+            <div class="res-col miss"><h3>Gefehlt</h3><ul id="uMiss"></ul></div>
+            <div class="res-col risk"><h3>Fehler &amp; Fallen</h3><ul id="uRisk"></ul></div>
+          </div>
+          <div class="res-answer">
+            <h3>So klingt eine prüfungssichere Antwort</h3>
+            <p id="uMusterKompakt"></p>
+          </div>
+        </div>
+
+        <div id="uMusterBox" hidden style="margin-top: 18px">
+          <h3 style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent)">
+            Musterantwort – Stichworte
+          </h3>
+          <ul id="uMusterListe" style="padding-left: 19px; display: flex; flex-direction: column; gap: 5px"></ul>
+          <p class="muster-extra warn" id="uMusterFalle" hidden></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="chart-kopf">
+          <h3>Frag den Prüfer</h3>
+          <span class="hint">Eigene Frage stellen – Antwort mit Kernpunkten, Rechtsgrundlagen und Prüfungstipp</span>
+        </div>
+
+        <div class="frag-box">
+          <div class="frag-zeile">
+            <textarea id="freieFrage" placeholder="Zum Beispiel: Wie lange darf die Probezeit dauern und was passiert bei längerer Krankheit?"></textarea>
+            <div class="frag-tasten">
+              <button class="btn primary" id="btnFragen" type="button">Fragen</button>
+              <button class="btn mic" id="btnFragenMic" type="button"><span>🎙</span></button>
+            </div>
+          </div>
+          <p class="error" id="fragenFehler" hidden></p>
+
+          <div class="erklaerung" id="antwortBox" hidden>
+            <p class="kurz" id="eKurz"></p>
+            <div>
+              <h4>Kernpunkte</h4>
+              <ul id="eKern"></ul>
+            </div>
+            <div id="eRechtBox">
+              <h4>Rechtsgrundlagen</h4>
+              <div class="paragraphen" id="eRecht"></div>
+            </div>
+            <div id="eBeispielBox">
+              <h4>Praxisbeispiel</h4>
+              <p id="eBeispiel"></p>
+            </div>
+            <div id="eTippBox">
+              <h4>Prüfungstipp</h4>
+              <p id="eTipp"></p>
+            </div>
+            <p class="hinweis-box" id="eUnsicher" hidden></p>
+            <div class="answer-foot">
+              <span id="eMeta"></span>
+              <div class="btn-row">
+                <button class="btn sprechen" id="btnAntwortVorlesen" type="button">🔊 Antwort vorlesen</button>
+                <button class="btn ghost" id="btnAntwortStopp" type="button" hidden>■ Stopp</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <footer class="fineprint"><p id="wHinweis"></p></footer>
+    </main>
+
+    <script type="module" src="wissen.js"></script>
+  </body>
+</html>

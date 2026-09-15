@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AEVO Trainer – Hauptmenü</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1014'/%3E%3Cpath d='M9 22 16 9l7 13' stroke='%23ffb224' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <main class="menu-wrap">
+      <section class="hero">
+        <div class="hero-mark">AE</div>
+        <h1 id="begruessung">AEVO Trainer</h1>
+        <p>
+          Ausbildereignungsprüfung der IHK Nürnberg üben: Fragen beantworten – getippt oder diktiert –,
+          von Claude bewerten lassen, Schwachstellen erkennen und den Fortschritt verfolgen.
+        </p>
+
+        <div class="hero-stats">
+          <div class="hero-stat"><strong id="hsBeantwortet">–</strong><span>beantwortet</span></div>
+          <div class="hero-stat"><strong id="hsSchnitt">–</strong><span>Ø Punkte</span></div>
+          <div class="hero-stat"><strong id="hsHeute">–</strong><span>heute gelernt</span></div>
+          <div class="hero-stat"><strong id="hsSerie">–</strong><span>Tage in Folge</span></div>
+          <div class="hero-stat" id="hsTerminBox" hidden><strong id="hsTermin">–</strong><span>bis zur Prüfung</span></div>
+        </div>
+      </section>
+
+      <nav class="menu-grid">
+        <a class="menu-card primary" href="quiz.html">
+          <div class="mc-icon">🎯</div>
+          <h2>Prüfungsquiz starten</h2>
+          <p>147 Prüfungsfragen aus allen Handlungsfeldern, Fachgesprächsfällen und dem Wissensbereich. Antwort tippen oder diktieren, Bewertung mit 0–10 Punkten.</p>
+          <span class="mc-meta" id="mcQuiz">Los geht's →</span>
+        </a>
+
+        <a class="menu-card" href="fortschritt.html">
+          <div class="mc-icon">📈</div>
+          <h2>Fortschritt &amp; Entwicklung</h2>
+          <p>Punkteentwicklung und Lernzeit über 7, 30 oder 90 Tage. Zeigt, ob sich das Üben in besseren Bewertungen niederschlägt.</p>
+          <span class="mc-meta" id="mcFortschritt">Verlauf ansehen →</span>
+        </a>
+
+        <a class="menu-card" href="schwaechen.html">
+          <div class="mc-icon">🎚</div>
+          <h2>Schwachstellen</h2>
+          <p>Die Handlungsfelder und Themen mit den niedrigsten Punkten – inklusive Direktstart in genau diese Fragen.</p>
+          <span class="mc-meta" id="mcSchwaechen">Lücken finden →</span>
+        </a>
+
+        <a class="menu-card" href="wissen.html">
+          <div class="mc-icon">📚</div>
+          <h2>Wissensbereich</h2>
+          <p>JAV und Betriebsrat, Teilzeitausbildung, Ausbildungsordnung, Rahmenplan, Vertrag und mehr: Übungsfragen je Thema und freies Nachfragen beim KI-Prüfer.</p>
+          <span class="mc-meta" id="mcWissen">8 Themen →</span>
+        </a>
+
+        <a class="menu-card" href="profil.html">
+          <div class="mc-icon">👤</div>
+          <h2>Profil &amp; API-Schlüssel</h2>
+          <p>Name, Prüfungstermin, Standardmodell, Stimme fürs Vorlesen – und die Verwaltung der API-Schlüssel in der lokalen <code>.env</code>.</p>
+          <span class="mc-meta" id="mcProfil">Einstellungen →</span>
+        </a>
+      </nav>
+
+      <p class="menu-hinweis" id="schluesselHinweis" hidden>
+        <span>⚠ Es ist noch kein Claude API-Schlüssel hinterlegt. Ohne Schlüssel kann keine Antwort bewertet werden.</span>
+        <a href="profil.html">Jetzt eintragen</a>
+      </p>
+
+      <footer class="fineprint" style="margin-top: 28px">
+        <p id="quelle"></p>
+      </footer>
+    </main>
+
+    <script type="module" src="menu.js"></script>
+  </body>
+</html>
