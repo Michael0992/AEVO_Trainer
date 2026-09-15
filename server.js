@@ -89,7 +89,10 @@ function modellWahl(gewuenscht) {
 // ------------------------------------------------------------------ Routen
 
 const routen = {
-  "GET /api/session": (req, res) => sendJson(res, 200, { ok: true }),
+  "GET /api/session": (req, res) => {
+    const angemeldet = Boolean(pruefeSitzung(leseCookie(req, COOKIE_NAME)));
+    sendJson(res, angemeldet ? 200 : 401, { ok: angemeldet });
+  },
 
   "POST /api/login": (req, res, body) => {
     try {
