@@ -106,50 +106,64 @@ nicht manipulieren. Der Fortschritt (Antworten, Punkte) liegt ausschließlich im
 
 ## Deployment auf Render
 
-Auf Render ist das Projektverzeichnis **flüchtig**: Bei jedem Deploy und bei jedem
-Neustart – Free-Instanzen schlafen nach etwa 15 Minuten ohne Zugriff ein – wird es
-neu angelegt. Ohne Persistent Disk gehen deshalb Ergebnisse, Lernzeit, Profil und
-ein über die App eingetragener API-Schlüssel verloren.
+Render legt das Projektverzeichnis bei **jedem Deploy** neu an, und Free-Instanzen
+fahren nach etwa 15 Minuten ohne Zugriff herunter. Alles, was nur im Dateisystem
+liegt, ist danach weg: Ergebnisse, Lernzeit, Profil und der über die App
+eingetragene API-Schlüssel. **Persistent Disks gibt es bei Render erst ab dem
+Starter-Plan** – im Free-Plan gibt es kein Verzeichnis, das einen Neustart übersteht.
 
-### Einrichtung
+Die App speichert deshalb in eine Postgres-Datenbank, sobald `DATABASE_URL` gesetzt
+ist. Das funktioniert auf jedem Plan, auch im Free-Tier.
 
-1. **Persistent Disk anlegen** (Render → Service → Disks): Mount-Pfad `/var/data`,
-   1 GB genügt. Disks setzen einen bezahlten Instanztyp voraus (`starter`),
-   der Free-Tier kann keine Disks.
-2. **Umgebungsvariablen setzen:**
+### Einrichtung (Free-Plan, kostenlos)
+
+1. **Datenbank anlegen**: bei [Neon](https://neon.tech) ein Projekt erstellen
+   (dauerhaft kostenloses Kontingent) und den Verbindungsstring kopieren –
+   Form: `postgresql://user:passwort@host.neon.tech/dbname?sslmode=require`.
+   Alternativ Supabase oder eine Render-Postgres-Instanz.
+2. **Umgebungsvariablen in Render setzen** (Service → Environment):
 
    | Variable | Wert | Zweck |
    |---|---|---|
-   | `DATA_DIR` | `/var/data` | Ergebnisse, Lernzeit, Profil und `.env` landen auf der Disk |
+   | `DATABASE_URL` | Verbindungsstring | Ergebnisse, Lernzeit, Profil, Schlüssel, Zugangsdaten |
    | `AEVO_USER` | z. B. `admin` | Benutzername für den Login |
    | `AEVO_PASSWORD` | eigenes Passwort | Passwort für den Login |
    | `SESSION_SECRET` | langer Zufallswert | signiert die Sitzungscookies |
    | `ANTHROPIC_API_KEY` | `sk-ant-...` | optional – sonst im Profil der App eintragen |
 
-Die Datei `render.yaml` im Projekt enthält diese Konfiguration bereits als Blueprint.
+3. Deployen. Die Tabelle `aevo_store` wird beim ersten Start automatisch angelegt.
 
-### Warum diese Variablen
+`render.yaml` enthält diese Konfiguration bereits als Blueprint.
 
-- **`DATA_DIR`** ist der einzige Schalter für die Persistenz. Ist er gesetzt, liegen
-  `store.json` und die `.env` auf der Disk; beim ersten Start werden vorhandene Daten
-  aus `data/store.json` automatisch übernommen.
-- **`SESSION_SECRET`** hält Anmeldungen über Neustarts hinweg gültig. Ohne die Variable
-  wird das Geheimnis aus den Zugangsdaten abgeleitet – das funktioniert ebenfalls,
-  solange `AEVO_PASSWORD` stabil bleibt. Eine Passwortänderung meldet alle ab.
+### Alternative mit Persistent Disk
+
+Wer ohnehin einen bezahlten Instanztyp nutzt, kann statt der Datenbank eine Disk
+einbinden (Mount-Pfad `/var/data`) und `DATA_DIR=/var/data` setzen. Ist
+`DATABASE_URL` gesetzt, hat die Datenbank Vorrang.
 
 ### Prüfen, ob die Speicherung greift
 
 Nach dem Anmelden `https://<deine-app>.onrender.com/api/diagnose` aufrufen:
 
 ```json
-{ "speicher": { "pfad": "/var/data/store.json", "ausUmgebung": true,
+{ "speicher": { "backend": "postgres", "dauerhaft": true,
                 "schreibbar": true, "letzterFehler": null } }
 ```
 
-`ausUmgebung: false` bedeutet, dass `DATA_DIR` fehlt und in das flüchtige
-Projektverzeichnis geschrieben wird. Kann der Server ein Ergebnis nicht dauerhaft
-ablegen, meldet die API `gespeichert: false` und das Quiz zeigt eine Warnung an,
-statt den Verlust zu verschweigen. Der Serverstart protokolliert denselben Zustand.
+`"backend": "datei"` bedeutet, dass keine Datenbank erreichbar war und in das
+flüchtige Projektverzeichnis geschrieben wird – dann stimmt `DATABASE_URL` nicht.
+Der Serverstart protokolliert denselben Zustand, und ist die Datenbank beim Start
+nicht erreichbar, läuft die App weiter (mit Datei-Ablage) statt abzustürzen.
+
+Kann ein Ergebnis nicht dauerhaft abgelegt werden, meldet die API
+`gespeichert: false` und das Quiz zeigt eine Warnung an, statt den Verlust zu
+verschweigen.
+
+### Umzug bestehender Daten
+
+Beim ersten Start mit leerer Datenbank übernimmt die App automatisch eine
+vorhandene `store.json`. Lokal gesammelte Ergebnisse lassen sich außerdem im
+Profil als JSON sichern.
 
 ## Hinweis
 

@@ -1,40 +1,54 @@
 # Render Blueprint für den AEVO Trainer.
-# Wichtig ist die Persistent Disk: ohne sie liegt data/store.json im
-# Projektverzeichnis, und das wird bei jedem Deploy und jedem Neustart
-# (Free-Instanzen schlafen nach ~15 Minuten ein) zurückgesetzt.
+#
+# Entscheidend ist DATABASE_URL. Render legt das Projektverzeichnis bei jedem
+# Deploy neu an, und Free-Instanzen fahren nach etwa 15 Minuten ohne Zugriff
+# herunter – alles, was nur im Dateisystem liegt, ist danach weg. Persistent
+# Disks gibt es erst ab dem Starter-Plan; eine externe Postgres-Datenbank
+# (z. B. Neon, dauerhaft kostenlos) funktioniert dagegen auf jedem Plan.
 
 services:
   - type: web
     name: aevo-trainer
     runtime: node
-    plan: starter # Persistent Disks gibt es erst ab "starter" – free kann keine Disks
+    plan: free
     buildCommand: npm ci
     startCommand: npm start
     healthCheckPath: /login.html
 
-    disk:
-      name: aevo-daten
-      mountPath: /var/data
-      sizeGB: 1
-
     envVars:
-      # Alle veränderlichen Daten (Ergebnisse, Lernzeit, Profil, .env) landen
-      # damit auf der Disk und überleben Deploys und Neustarts.
-      - key: DATA_DIR
-        value: /var/data
+      # Ergebnisse, Lernzeit, Profil, API-Schlüssel und Zugangsdaten landen
+      # damit in der Datenbank und überleben Deploys und Ruhephasen.
+      # Verbindungsstring z. B. aus dem Neon-Dashboard kopieren.
+      - key: DATABASE_URL
+        sync: false
 
-      # Zugangsdaten für den Login. Setze das Passwort im Render-Dashboard.
+      # Zugangsdaten für den Login.
       - key: AEVO_USER
         value: admin
       - key: AEVO_PASSWORD
         sync: false
 
-      # Signiert die Sitzungscookies. Render erzeugt den Wert einmalig;
-      # solange er gleich bleibt, meldet kein Neustart jemanden ab.
+      # Signiert die Sitzungscookies. Solange der Wert gleich bleibt,
+      # meldet kein Neustart jemanden ab.
       - key: SESSION_SECRET
         generateValue: true
 
       # Claude API-Schlüssel. Alternativ im Profil der App eintragen –
-      # dann landet er in /var/data/.env und bleibt ebenfalls erhalten.
+      # dann wird er in der Datenbank abgelegt und bleibt ebenfalls erhalten.
       - key: ANTHROPIC_API_KEY
         sync: false
+
+# ---------------------------------------------------------------------------
+# Alternative ohne externe Datenbank (erfordert einen bezahlten Instanztyp,
+# weil Persistent Disks im Free-Plan nicht verfügbar sind):
+#
+#     plan: starter
+#     disk:
+#       name: aevo-daten
+#       mountPath: /var/data
+#       sizeGB: 1
+#     envVars:
+#       - key: DATA_DIR
+#         value: /var/data
+#
+# Ist DATABASE_URL gesetzt, hat die Datenbank Vorrang vor DATA_DIR.

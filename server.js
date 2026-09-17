@@ -21,8 +21,6 @@ import {
   loescheSitzungsCookie,
 } from "./lib/auth.js";
 
-stelleZugangsdatenSicher();
-
 const here = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT) || 3000;
 
@@ -144,7 +142,7 @@ const routen = {
         frage,
         antwort,
       });
-      const satz = store.speichereErgebnis({
+      const satz = await store.speichereErgebnis({
         frageId: frage.id,
         bereich: frage.bereich,
         kategorie: frage.kategorie,
@@ -198,19 +196,19 @@ const routen = {
       modelle: EMPFOHLENE_MODELLE.map((m) => ({ ...m, empfohlen: true })),
     }),
 
-  "PUT /api/profil": (req, res, body) => sendJson(res, 200, { profil: store.setzeProfil(body) }),
+  "PUT /api/profil": async (req, res, body) => sendJson(res, 200, { profil: await store.setzeProfil(body) }),
 
   // ------------------------------------------------- API-Schluessel (.env)
 
   "GET /api/keys": (req, res) => sendJson(res, 200, { schluessel: schluesselUebersicht(), datei: ENV_PFAD }),
 
-  "PUT /api/keys": (req, res, body) => {
+  "PUT /api/keys": async (req, res, body) => {
     const anbieter = body.anbieter || "anthropic";
     if (!ANBIETER[anbieter]) return sendJson(res, 400, { fehler: "Unbekannter Anbieter." });
     const wert = String(body.schluessel || "").trim();
     if (wert && wert.length < 20) return sendJson(res, 400, { fehler: "Der Schluessel sieht zu kurz aus." });
     try {
-      setzeSchluessel(anbieter, wert);
+      await setzeSchluessel(anbieter, wert);
       sendJson(res, 200, { schluessel: schluesselUebersicht(), datei: ENV_PFAD });
     } catch (err) {
       sendJson(res, 500, { fehler: err.message });
@@ -259,20 +257,20 @@ const routen = {
     });
   },
 
-  "DELETE /api/ergebnisse": (req, res) => {
-    store.loescheErgebnisse();
+  "DELETE /api/ergebnisse": async (req, res) => {
+    await store.loescheErgebnisse();
     sendJson(res, 200, { ok: true });
   },
 
-  "POST /api/ergebnisse/import": (req, res, body) => {
+  "POST /api/ergebnisse/import": async (req, res, body) => {
     const eintraege = Array.isArray(body.eintraege) ? body.eintraege : [];
-    sendJson(res, 200, { uebernommen: store.importiereAltdaten(eintraege) });
+    sendJson(res, 200, { uebernommen: await store.importiereAltdaten(eintraege) });
   },
 
   // ---------------------------------------------------------- Lernzeit
 
-  "POST /api/lernzeit": (req, res, body) => {
-    const gesamt = store.addiereLernzeit(body.sekunden);
+  "POST /api/lernzeit": async (req, res, body) => {
+    const gesamt = await store.addiereLernzeit(body.sekunden);
     sendJson(res, 200, { heute: gesamt });
   },
 
@@ -289,6 +287,7 @@ const routen = {
         laufzeitSekunden: Math.round(process.uptime()),
         render: Boolean(process.env.RENDER || process.env.RENDER_SERVICE_ID),
         dataDirGesetzt: Boolean(process.env.DATA_DIR),
+        datenbankGesetzt: Boolean(process.env.DATABASE_URL),
       },
       schluessel: Boolean(holeSchluessel("anthropic")),
     }),
@@ -344,20 +343,28 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
+// Ablage waehlen und laden, dann erst Zugangsdaten sichern - so landen
+// automatisch erzeugte Zugangsdaten gleich in der dauerhaften Ablage.
+await store.init();
+await stelleZugangsdatenSicher();
+
 server.listen(PORT, () => {
+  const speicher = store.speicherStatus();
+
   console.log(`AEVO Trainer laeuft auf http://localhost:${PORT}`);
   console.log(`${katalog.fragen.length} Pruefungsfragen + ${wissen.fragen.length} Wissensfragen geladen`);
   console.log(holeSchluessel("anthropic") ? "API-Schluessel gefunden." : "Kein API-Schluessel - im Profil hinterlegen.");
-
-  const speicher = store.speicherStatus();
   console.log(`Daten: ${speicher.pfad} (${speicher.ergebnisse} Ergebnisse, ${speicher.lerntage} Lerntage)`);
+
+  const beiHoster = Boolean(process.env.RENDER || process.env.RENDER_SERVICE_ID);
   if (!speicher.schreibbar) {
-    console.warn("WARNUNG: Das Datenverzeichnis ist nicht beschreibbar - Ergebnisse gehen beim Neustart verloren.");
-  } else if (!speicher.ausUmgebung && (process.env.RENDER || process.env.RENDER_SERVICE_ID)) {
+    console.warn("WARNUNG: Die Ablage ist nicht beschreibbar - Ergebnisse gehen beim Neustart verloren.");
+  } else if (beiHoster && !speicher.dauerhaft) {
     console.warn(
-      "WARNUNG: DATA_DIR ist nicht gesetzt. Auf Render ist das Projektverzeichnis fluechtig - " +
-        "Ergebnisse verschwinden bei jedem Deploy und jedem Neustart. Persistent Disk einbinden " +
-        "und DATA_DIR auf deren Mount-Pfad setzen (z.B. /var/data).",
+      "WARNUNG: Weder DATABASE_URL noch DATA_DIR gesetzt. Das Projektverzeichnis ist hier " +
+        "fluechtig - Ergebnisse, Einstellungen und API-Schluessel verschwinden bei jedem Deploy " +
+        "und nach jeder Ruhephase. Abhilfe: DATABASE_URL auf eine Postgres-Datenbank setzen " +
+        "(funktioniert auch im Free-Plan) oder eine Persistent Disk mit DATA_DIR verwenden.",
     );
   }
 });
