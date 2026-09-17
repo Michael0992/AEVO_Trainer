@@ -156,7 +156,13 @@ const routen = {
         model,
         eingabe: body.eingabe === "mikrofon" ? "mikrofon" : "tastatur",
       });
-      sendJson(res, 200, { bewertung, model, ergebnisId: satz.id, zeit: satz.zeit });
+      sendJson(res, 200, {
+        bewertung,
+        model,
+        ergebnisId: satz.id,
+        zeit: satz.zeit,
+        gespeichert: satz.gespeichert, // false = nur im Arbeitsspeicher, nach Neustart weg
+      });
     } catch (err) {
       sendJson(res, err?.status && err.status < 500 ? err.status : 502, { fehler: fehlertext(err) });
     }
@@ -272,6 +278,20 @@ const routen = {
 
   "GET /api/lernzeit": (req, res) =>
     sendJson(res, 200, { lernzeit: store.holeLernzeit(), heute: store.holeLernzeit()[store.heute()] || 0 }),
+
+  // Zeigt, wohin gespeichert wird und ob das funktioniert. Hilft vor allem
+  // beim Betrieb auf einem Hoster mit fluechtigem Dateisystem.
+  "GET /api/diagnose": (req, res) =>
+    sendJson(res, 200, {
+      speicher: store.speicherStatus(),
+      umgebung: {
+        node: process.version,
+        laufzeitSekunden: Math.round(process.uptime()),
+        render: Boolean(process.env.RENDER || process.env.RENDER_SERVICE_ID),
+        dataDirGesetzt: Boolean(process.env.DATA_DIR),
+      },
+      schluessel: Boolean(holeSchluessel("anthropic")),
+    }),
 };
 
 // ------------------------------------------------------------------ Server
@@ -328,4 +348,16 @@ server.listen(PORT, () => {
   console.log(`AEVO Trainer laeuft auf http://localhost:${PORT}`);
   console.log(`${katalog.fragen.length} Pruefungsfragen + ${wissen.fragen.length} Wissensfragen geladen`);
   console.log(holeSchluessel("anthropic") ? "API-Schluessel gefunden." : "Kein API-Schluessel - im Profil hinterlegen.");
+
+  const speicher = store.speicherStatus();
+  console.log(`Daten: ${speicher.pfad} (${speicher.ergebnisse} Ergebnisse, ${speicher.lerntage} Lerntage)`);
+  if (!speicher.schreibbar) {
+    console.warn("WARNUNG: Das Datenverzeichnis ist nicht beschreibbar - Ergebnisse gehen beim Neustart verloren.");
+  } else if (!speicher.ausUmgebung && (process.env.RENDER || process.env.RENDER_SERVICE_ID)) {
+    console.warn(
+      "WARNUNG: DATA_DIR ist nicht gesetzt. Auf Render ist das Projektverzeichnis fluechtig - " +
+        "Ergebnisse verschwinden bei jedem Deploy und jedem Neustart. Persistent Disk einbinden " +
+        "und DATA_DIR auf deren Mount-Pfad setzen (z.B. /var/data).",
+    );
+  }
 });

@@ -308,6 +308,13 @@ async function bewerteAntwort() {
 
     zeigeErgebnis(daten.bewertung, daten.model, daten.zeit, state.profil?.autoVorlesen);
     rendereListe();
+
+    if (daten.gespeichert === false) {
+      zeigeFehler(
+        $("fehler"),
+        "Achtung: Der Server konnte das Ergebnis nicht dauerhaft speichern. Es ist nur bis zum nächsten Neustart vorhanden.",
+      );
+    }
     api("/api/statistik?tage=7")
       .then((s) => aktualisiereStats(s.uebersicht))
       .catch(() => {});

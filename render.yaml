@@ -1,0 +1,40 @@
+# Render Blueprint für den AEVO Trainer.
+# Wichtig ist die Persistent Disk: ohne sie liegt data/store.json im
+# Projektverzeichnis, und das wird bei jedem Deploy und jedem Neustart
+# (Free-Instanzen schlafen nach ~15 Minuten ein) zurückgesetzt.
+
+services:
+  - type: web
+    name: aevo-trainer
+    runtime: node
+    plan: starter # Persistent Disks gibt es erst ab "starter" – free kann keine Disks
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /login.html
+
+    disk:
+      name: aevo-daten
+      mountPath: /var/data
+      sizeGB: 1
+
+    envVars:
+      # Alle veränderlichen Daten (Ergebnisse, Lernzeit, Profil, .env) landen
+      # damit auf der Disk und überleben Deploys und Neustarts.
+      - key: DATA_DIR
+        value: /var/data
+
+      # Zugangsdaten für den Login. Setze das Passwort im Render-Dashboard.
+      - key: AEVO_USER
+        value: admin
+      - key: AEVO_PASSWORD
+        sync: false
+
+      # Signiert die Sitzungscookies. Render erzeugt den Wert einmalig;
+      # solange er gleich bleibt, meldet kein Neustart jemanden ab.
+      - key: SESSION_SECRET
+        generateValue: true
+
+      # Claude API-Schlüssel. Alternativ im Profil der App eintragen –
+      # dann landet er in /var/data/.env und bleibt ebenfalls erhalten.
+      - key: ANTHROPIC_API_KEY
+        sync: false
