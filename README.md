@@ -104,66 +104,72 @@ public/app.js          Fragenlogik, Mikrofon, Fortschritt (localStorage)
 Der Server hält die Musterantworten – die Bewertung lässt sich vom Browser aus also
 nicht manipulieren. Der Fortschritt (Antworten, Punkte) liegt ausschließlich im Browser.
 
-## Deployment auf Render
+## Betrieb auf einem eigenen Linux-Server
 
-Render legt das Projektverzeichnis bei **jedem Deploy** neu an, und Free-Instanzen
-fahren nach etwa 15 Minuten ohne Zugriff herunter. Alles, was nur im Dateisystem
-liegt, ist danach weg: Ergebnisse, Lernzeit, Profil und der über die App
-eingetragene API-Schlüssel. **Persistent Disks gibt es bei Render erst ab dem
-Starter-Plan** – im Free-Plan gibt es kein Verzeichnis, das einen Neustart übersteht.
+Alle Daten liegen im Dateisystem: Ergebnisse, Lernzeit und Profil in
+`data/store.json`, Zugangsdaten und API-Schlüssel in `.env`. Auf einem eigenen
+Server ist das dauerhaft – es braucht keine Datenbank.
 
-Die App speichert deshalb in eine Postgres-Datenbank, sobald `DATABASE_URL` gesetzt
-ist. Das funktioniert auf jedem Plan, auch im Free-Tier.
+### Als systemd-Dienst einrichten
 
-### Einrichtung (Free-Plan, kostenlos)
+```bash
+cd ~/AEVO_Trainer
+npm ci --omit=dev
+sudo bash deploy/install.sh
+```
 
-1. **Datenbank anlegen**: bei [Neon](https://neon.tech) ein Projekt erstellen
-   (dauerhaft kostenloses Kontingent) und den Verbindungsstring kopieren –
-   Form: `postgresql://user:passwort@host.neon.tech/dbname?sslmode=require`.
-   Alternativ Supabase oder eine Render-Postgres-Instanz.
-2. **Umgebungsvariablen in Render setzen** (Service → Environment):
+Das Skript trägt Benutzer, Projektpfad und den Pfad zu `node` selbst ein,
+legt `/etc/systemd/system/aevo-trainer.service` an und startet den Dienst auf
+Port 3001. Die Vorlage liegt unter `deploy/aevo-trainer.service` und lässt sich
+auch von Hand kopieren.
 
-   | Variable | Wert | Zweck |
-   |---|---|---|
-   | `DATABASE_URL` | Verbindungsstring | Ergebnisse, Lernzeit, Profil, Schlüssel, Zugangsdaten |
-   | `AEVO_USER` | z. B. `admin` | Benutzername für den Login |
-   | `AEVO_PASSWORD` | eigenes Passwort | Passwort für den Login |
-   | `SESSION_SECRET` | langer Zufallswert | signiert die Sitzungscookies |
-   | `ANTHROPIC_API_KEY` | `sk-ant-...` | optional – sonst im Profil der App eintragen |
+| Zweck | Befehl |
+|---|---|
+| Status | `systemctl status aevo-trainer` |
+| Logs live | `journalctl -u aevo-trainer -f` |
+| Nach Update neu starten | `git pull && npm ci --omit=dev && sudo systemctl restart aevo-trainer` |
+| Stoppen | `sudo systemctl stop aevo-trainer` |
 
-3. Deployen. Die Tabelle `aevo_store` wird beim ersten Start automatisch angelegt.
+### Konfiguration
 
-`render.yaml` enthält diese Konfiguration bereits als Blueprint.
+Der Dienst liest `~/AEVO_Trainer/.env`:
 
-### Alternative mit Persistent Disk
+| Variable | Zweck |
+|---|---|
+| `AEVO_USER` / `AEVO_PASSWORD` | Zugangsdaten für den Login |
+| `SESSION_SECRET` | signiert die Sitzungscookies; bleibt der Wert gleich, meldet kein Neustart jemanden ab |
+| `ANTHROPIC_API_KEY` | optional – alternativ im Profil der App eintragen |
 
-Wer ohnehin einen bezahlten Instanztyp nutzt, kann statt der Datenbank eine Disk
-einbinden (Mount-Pfad `/var/data`) und `DATA_DIR=/var/data` setzen. Ist
-`DATABASE_URL` gesetzt, hat die Datenbank Vorrang.
+Fehlt die Datei, erzeugt die App beim ersten Start ein Passwort und schreibt es
+ins Log (`journalctl -u aevo-trainer | head -40`).
+
+Port und Datenverzeichnis kommen aus der Unit (`PORT`, `DATA_DIR`). `DATA_DIR`
+ist nur nötig, wenn die Daten außerhalb des Projektordners liegen sollen –
+etwa auf einem eigenen Mount.
 
 ### Prüfen, ob die Speicherung greift
 
-Nach dem Anmelden `https://<deine-app>.onrender.com/api/diagnose` aufrufen:
+Nach dem Anmelden `/api/diagnose` aufrufen:
 
 ```json
-{ "speicher": { "backend": "postgres", "dauerhaft": true,
+{ "speicher": { "pfad": "/home/emshift/AEVO_Trainer/data/store.json",
                 "schreibbar": true, "letzterFehler": null } }
 ```
 
-`"backend": "datei"` bedeutet, dass keine Datenbank erreichbar war und in das
-flüchtige Projektverzeichnis geschrieben wird – dann stimmt `DATABASE_URL` nicht.
-Der Serverstart protokolliert denselben Zustand, und ist die Datenbank beim Start
-nicht erreichbar, läuft die App weiter (mit Datei-Ablage) statt abzustürzen.
+Kann ein Ergebnis nicht abgelegt werden, meldet die API `gespeichert: false`
+und das Quiz zeigt eine Warnung, statt den Verlust zu verschweigen.
 
-Kann ein Ergebnis nicht dauerhaft abgelegt werden, meldet die API
-`gespeichert: false` und das Quiz zeigt eine Warnung an, statt den Verlust zu
-verschweigen.
+### Hinweis zu Mikrofon und Vorlesen
 
-### Umzug bestehender Daten
+Spracherkennung und Sprachausgabe erlaubt der Browser nur über HTTPS oder
+`localhost`. Beim Zugriff über die IP des Servers bleibt das Mikrofon gesperrt –
+dafür braucht es einen Reverse Proxy mit Zertifikat.
 
-Beim ersten Start mit leerer Datenbank übernimmt die App automatisch eine
-vorhandene `store.json`. Lokal gesammelte Ergebnisse lassen sich außerdem im
-Profil als JSON sichern.
+### Deployment bei einem Hoster
+
+`render.yaml` beschreibt den Betrieb bei Render. Wichtig dort: Das
+Projektverzeichnis ist flüchtig, deshalb muss eine Persistent Disk eingebunden
+und `DATA_DIR` auf deren Mount-Pfad gesetzt werden.
 
 ## Hinweis
 
