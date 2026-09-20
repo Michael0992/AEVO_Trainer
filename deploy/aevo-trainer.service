@@ -1,0 +1,43 @@
+[Unit]
+Description=AEVO Trainer (Node.js)
+Documentation=https://github.com/Michael0992/AEVO_Trainer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=emshift
+Group=emshift
+WorkingDirectory=/home/emshift/AEVO_Trainer
+
+# Port und Datenablage. DATA_DIR zeigt auf ein Verzeichnis, das Updates
+# uebersteht - auf einem eigenen Server reicht der Projektordner.
+Environment=NODE_ENV=production
+Environment=PORT=3001
+Environment=DATA_DIR=/home/emshift/AEVO_Trainer/data
+
+# Zugangsdaten und API-Schluessel. Das fuehrende "-" bedeutet: fehlt die Datei,
+# startet der Dienst trotzdem. Format je Zeile: NAME=wert, ohne Anfuehrungszeichen.
+EnvironmentFile=-/home/emshift/AEVO_Trainer/.env
+
+# Pfad zu node pruefen mit: which node
+ExecStart=/usr/bin/node server.js
+
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=aevo-trainer
+
+# Absicherung: der Dienst braucht nur sein eigenes Verzeichnis und Netz.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target
